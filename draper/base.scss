@@ -1,0 +1,16 @@
+
+a {
+  color: #06c;
+
+  &:hover {
+    color: #09f;
+  }
+}
+
+p.justify {
+  text-align: justify;
+}
+
+.centered {
+  margin: 0 auto;
+}
