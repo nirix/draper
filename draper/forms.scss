@@ -1,0 +1,105 @@
+
+// Forms CSS
+// --------------------------------
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="url"],
+input[type="date"],
+textarea {
+  border: 1px solid #bbb;
+  border-radius: 2px;
+  background-color: #fafafa;
+  color: #000;
+  outline: 0;
+  padding: 4px 4px;
+  font-size: 14px;
+  width: 200px;
+
+  &:focus {
+    border-color: #3478AA;
+    background-color: #fff;
+  }
+
+  &.input-short {
+    width: 160px;
+  }
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  font-size: 15px;
+}
+
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  cursor: default;
+  -webkit-appearance: push-button;
+}
+
+form {
+  .help-inline {
+    display: inline-block;
+    padding-left: 5px;
+  }
+
+  // Tabular
+  // --------------------------------
+  &.tabular {
+    .control-group {
+      margin-bottom: 15px;
+
+      &:before,
+      &:after {
+        display: table;
+        content: "";
+        line-height: 0;
+      }
+
+      &:after {
+        clear: both;
+      }
+    }
+    .control-label {
+      float: left;
+      width: 160px;
+      padding-top: 3px;
+      text-align: right;
+    }
+    .controls {
+      margin-left: 180px;
+      font-size: 14px;
+
+      input[type="checkbox"],
+      input[type="radio"] {
+        margin-top: 5px;
+      }
+
+      select {
+        margin-top: 2px;
+      }
+    }
+  }
+
+  // Actions
+  // --------------------------------
+  .actions {
+    text-align: center;
+  }
+}
+
+// Form element span
+// --------------------------------
+
+input,
+textarea,
+button {
+  &[class*="span"] {
+    float: none !important;
+    margin: 0 !important;
+    box-sizing: content-box;
+  }
+}
