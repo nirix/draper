@@ -1,0 +1,43 @@
+
+// Debug CSS
+// --------------------------------
+
+.debug {
+  .row, .row-fluid {
+    [class*="span"] {
+      background-color: #ddd;
+      line-height: 30px;
+      min-height: 30px;
+      text-align: center;
+      border-radius: 5px;
+
+      .row, .row-fluid {
+        margin-bottom: 0;
+
+        [class*="span"] {
+          background-color: #bbb;
+
+          &:hover {
+            background: #aaa;
+          }
+        }
+      }
+
+      &:hover {
+        background-color: #ccc;
+      }
+    }
+  }
+
+  .fluid-grid {
+    margin: 0 auto;
+    width: 50%;
+    -webkit-transition: all 0.30s ease-in;
+    -moz-transition: all 0.30s ease-in;
+    -o-transition: all 0.30s ease-in;
+    transition: all 0.30s ease-in;
+    &:hover {
+      width: 100%;
+    }
+  }
+}
