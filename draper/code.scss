@@ -1,0 +1,25 @@
+
+code {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 13px;
+  padding: 0 3px;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+
+  code {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    border: 0;
+  }
+}
