@@ -1,0 +1,44 @@
+.modal {
+  background: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  .modal-title {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 5px;
+
+    h1, h2, h3, h4, h5, h6 {
+      margin: 0;
+    }
+
+    button.close {
+      float: right;
+      top: -2px;
+      position: relative;
+    }
+  }
+
+  .modal-content {
+    padding: 10px;
+    max-height: 400px;
+    overflow: scroll;
+
+    p {
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .modal-footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.03);
+    text-align: right;
+    padding: 10px;
+  }
+}
