@@ -2,9 +2,11 @@
 @import "draper/normalize";
 
 /*! draper.css v0.1 | BSD License | github.com/nirix/draper */
+@import "settings";
 @import "draper/base";
 @import "draper/alerts";
 @import "draper/box";
+@import "draper/buttons";
 @import "draper/close";
 @import "draper/code";
 @import "draper/grid";

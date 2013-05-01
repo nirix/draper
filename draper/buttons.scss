@@ -1,0 +1,21 @@
+
+// Button CSS
+// --------------------------------
+
+.btn {
+  border-radius: 4px;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+  border: 1px solid #3478AA;
+  background-color: #3872b3;
+
+  background: -webkit-gradient(linear,left top,left bottom, color-stop(0%, $btn_blue_normal_start), color-stop(100%, $btn_blue_normal_end));
+  background: -webkit-linear-gradient(top, $btn_blue_normal_start 0%, $btn_blue_normal_end 100%);
+  background: -moz-linear-gradient(top, $btn_blue_normal_start 0%, $btn_blue_normal_end 100%);
+  background: -o-linear-gradient(top, $btn_blue_normal_start 0%, $btn_blue_normal_end 100%);
+  background: -ms-linear-gradient(top, $btn_blue_normal_start 0%, $btn_blue_normal_end 100%);
+  background: linear-gradient(top, $btn_blue_normal_start 0%, $btn_blue_normal_end 100%);
+}
