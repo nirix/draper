@@ -23,7 +23,7 @@
       position: relative;
       margin-bottom: -1px;
 
-      a {
+      a:link, a:visited {
         display: block;
         text-decoration: none;
         border: 1px solid transparent;
@@ -48,6 +48,10 @@
       &.active a {
         color: #000;
         border-bottom-color: #fff;
+
+        &:hover {
+          background: transparent;
+        }
       }
     }
   }
