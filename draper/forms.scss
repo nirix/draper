@@ -14,7 +14,7 @@ textarea {
   color: #000;
   outline: 0;
   padding: 4px 4px;
-  font-size: 14px;
+  font-size: 0.95em;
   width: 200px;
 
   &:focus {
@@ -29,7 +29,7 @@ textarea {
 
 input[type="checkbox"],
 input[type="radio"] {
-  font-size: 15px;
+  font-size: 1em;
 }
 
 button,
@@ -65,16 +65,15 @@ form {
     .control-label {
       float: left;
       width: 160px;
-      padding-top: 3px;
+      padding-top: 0.3em;
       text-align: right;
     }
     .controls {
       margin-left: 180px;
-      font-size: 14px;
 
       input[type="checkbox"],
       input[type="radio"] {
-        margin-top: 5px;
+        margin-top: 0.4em;
       }
 
       select {
