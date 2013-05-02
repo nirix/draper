@@ -3,10 +3,12 @@
 // --------------------------------
 
 a {
-  color: #06c;
+  &:link, &:visited {
+    color: #06c;
 
-  &:hover {
-    color: #09f;
+    &:hover {
+      color: #09f;
+    }
   }
 }
 
