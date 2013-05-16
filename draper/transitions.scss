@@ -1,8 +1,8 @@
 a {
-  -webkit-transition: color 0.08s ease-in;
-  -moz-transition: color 0.08s ease-in;
-  -o-transition: color 0.08s ease-in;
-  transition: color 0.08s ease-in;
+  -webkit-transition: color 0.15s linear;
+  -moz-transition: color 0.08s linear;
+  -o-transition: color 0.08s linear;
+  transition: color 0.15s linear;
 }
 
 input[type="text"],
@@ -11,8 +11,8 @@ input[type="email"],
 input[type="url"],
 input[type="date"],
 textarea {
-  -webkit-transition: border 0.15s ease-in, background 0.15s ease-in;
-  -moz-transition: border 0.15s ease-in, background 0.15s ease-in;
-  -o-transition: border 0.15s ease-in, background 0.15s ease-in;
-  transition: border 0.15s ease-in, background 0.15s ease-in;
+  -webkit-transition: border 0.15s linear, background 0.15s linear;
+  -moz-transition: border 0.15s linear, background 0.15s linear;
+  -o-transition: border 0.15s linear, background 0.15s linear;
+  transition: border 0.15s linear, background 0.15s linear;
 }
