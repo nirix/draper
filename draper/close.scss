@@ -1,7 +1,8 @@
 button.close {
   font-weight: bold;
   font-size: 18px;
-  color: rgba(0, 0, 0, 0.4);
+  color: inherit;
+  opacity: 0.4;
   cursor: pointer;
   border: 0;
   border-radius: 0;
@@ -11,6 +12,15 @@ button.close {
   margin: 0;
 
   &:hover {
-    color: #000;
+    opacity: 0.6;
+  }
+}
+
+.alert {
+  .close {
+    float: right;
+    position: relative;
+    top: -4px;
+    right: -4px;
   }
 }
