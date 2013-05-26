@@ -2,6 +2,13 @@
   border: 1px solid #ddd;
   border-radius: 5px;
   padding: 10px;
+  margin-bottom: 10px;
+
+  ul, ol {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 
   .panel-header {
     background: #f5f5f5;
