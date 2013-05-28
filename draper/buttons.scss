@@ -50,6 +50,24 @@ input[type="reset"] {
     }
   }
 
+  // Warning
+  // --------------------------------
+  &.warning {
+    border-color: rgb(248, 148, 6);
+    background-color: rgb(250, 167, 50);
+    box-shadow: inset 0 1px 0 rgb(253, 197, 119);
+    @include linear-gradient(rgb(251, 180, 80), rgb(248, 148, 6));
+
+    &:hover {
+      background-color: rgb(248, 148, 6);
+      @include linear-gradient(rgb(243, 173, 74), rgb(233, 139, 6));
+    }
+
+    &:active {
+      @include linear-gradient(rgb(233, 139, 6), rgb(243, 173, 74));
+    }
+  }
+
   // Red
   // --------------------------------
   &.danger {
