@@ -7,3 +7,14 @@
   background: -ms-linear-gradient(top, $start 0%, $end 100%);
   background: linear-gradient(top, $start 0%, $end 100%);
 }
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}

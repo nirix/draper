@@ -3,39 +3,35 @@
 // --------------------------------
 
 .debug {
-  .row, .row-fluid {
-    [class*="span"] {
-      background-color: #ddd;
-      line-height: 30px;
-      min-height: 30px;
+  .row {
+    .col {
+      background-color: #eee;
       text-align: center;
-      border-radius: 5px;
-
-      .row, .row-fluid {
-        margin-bottom: 0;
-
-        [class*="span"] {
-          background-color: #bbb;
-
-          &:hover {
-            background: #aaa;
-          }
-        }
-      }
+      border: 1px solid #bbb;
+      line-height: 30px;
 
       &:hover {
-        background-color: #ccc;
+        background: #ddd;
+      }
+
+      .col {
+        background: #ddd;
+
+        &:hover {
+          background: #ccc;
+        }
       }
     }
   }
 
   .fluid-grid {
+    width: 60%;
     margin: 0 auto;
-    width: 50%;
-    -webkit-transition: all 0.30s ease-in;
-    -moz-transition: all 0.30s ease-in;
-    -o-transition: all 0.30s ease-in;
-    transition: all 0.30s ease-in;
+    -webkit-transition: all 0.30s linear;
+    -moz-transition: all 0.30s linear;
+    -o-transition: all 0.30s linear;
+    transition: all 0.30s linear;
+
     &:hover {
       width: 100%;
     }

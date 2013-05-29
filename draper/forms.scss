@@ -155,5 +155,7 @@ form {
 input, textarea, select, button {
   vertical-align: middle;
 
+  &.col {
+    float: none;
   }
 }
