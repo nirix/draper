@@ -107,4 +107,24 @@ input[type="reset"] {
       @include linear-gradient(rgb(223, 223, 223), rgb(243, 242, 242));
     }
   }
+
+  // Large and Small
+  // --------------------------------
+  &.large {
+    font-size: 1.3em;
+    padding: 6px 14px;
+  }
+
+  &.small {
+    padding: 3px 8px;
+    font-size: 0.70em;
+  }
+
+  // Block
+  // --------------------------------
+  &.block {
+    display: block;
+    text-align: center;
+  }
+}
 }
