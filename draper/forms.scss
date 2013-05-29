@@ -105,15 +105,55 @@ form {
   }
 }
 
-// Form element span
-// --------------------------------
+.input-group {
+  display: table;
 
-input,
-textarea,
-button {
-  &[class*="span"] {
-    float: none !important;
-    margin: 0 !important;
-    box-sizing: content-box;
+  input,
+  select {
+    display: table-cell;
+    vertical-align: middle;
+    margin-bottom: 0;
+  }
+
+  * {
+    border-radius: 0;
+
+    &:first-child {
+      border-radius: 4px 0 0 4px;
+    }
+
+    &:last-child {
+      border-radius: 0 4px 4px 0;
+    }
+  }
+
+  input, select, button {
+    &:not(:first-child):not(:last-child) {
+      border-radius: 0;
+    }
+  }
+
+  .input-group-addon {
+    display: table-cell;
+    border: 1px solid #ccc;
+    background-color: #eee;
+    text-align: center;
+    vertical-align: middle;
+    padding: 3px 8px;
+    font-size: 0.8em;
+
+    &:first-child {
+      border-right: 0;
+    }
+
+    &:last-child {
+      border-left: 0;
+    }
+  }
+}
+
+input, textarea, select, button {
+  vertical-align: middle;
+
   }
 }
