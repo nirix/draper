@@ -4,16 +4,8 @@
 
 .container {
   width: 940px;
-
-  &:before, &:after {
-    display: table;
-    content: "";
-    line-height: 0;
-  }
-
-  &:after {
-    clear: both;
-  }
+  margin-auto: auto;
+  @include clearfix();
 }
 
 .row {
