@@ -127,4 +127,10 @@ input[type="reset"] {
     text-align: center;
   }
 }
+
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  -webkit-appearance: push-button;
 }

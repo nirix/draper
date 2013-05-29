@@ -32,13 +32,6 @@ input[type="radio"] {
   font-size: 1em;
 }
 
-button,
-input[type="button"],
-input[type="submit"],
-input[type="reset"] {
-  -webkit-appearance: push-button;
-}
-
 form {
   .help-inline {
     display: inline-block;
