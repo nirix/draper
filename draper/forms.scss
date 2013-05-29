@@ -25,6 +25,10 @@ textarea {
   &.input-short {
     width: 160px;
   }
+
+  &.invalid, &:invalid {
+    border-color: red;
+  }
 }
 
 input[type="checkbox"],
