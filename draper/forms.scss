@@ -79,6 +79,25 @@ form {
     }
   }
 
+  // Inline
+  // --------------------------------
+  &.inline {
+    vertical-align: middle;
+
+    input,
+    select,
+    textarea,
+    .radio,
+    .checkbox {
+      display: inline-block;
+    }
+    .radio,
+    .checkbox {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
   // Actions
   // --------------------------------
   .actions {
