@@ -8,5 +8,5 @@ input[type="email"],
 input[type="url"],
 input[type="date"],
 textarea {
-  @include transition(all 0.15s linear);
+  @include transition(border-color 0.15s linear, background-color 0.15s linear);
 }
