@@ -3,8 +3,8 @@
 // --------------------------------
 
 .container {
-  width: 940px;
-  margin-auto: auto;
+  width: $grid-container-width;
+  margin: 0 auto;
   @include clearfix();
 }
 
@@ -20,21 +20,21 @@
   width: 100%;
   min-height: 1px;
   box-sizing: border-box;
-  padding-left: (30px / 2);
-  padding-right: (30px / 2);
+  padding-left: $grid-column-padding;
+  padding-right: $grid-column-padding;
 
-  $i: 12;
+  $i: $grid-columns;
   @while $i > 0 {
     &.span-#{$i} {
-      width: percentage($i / 12);
+      width: percentage($i / $grid-columns);
     }
     $i: $i - 1;
   }
 
-  $i: 12;
+  $i: $grid-columns;
   @while $i > 0 {
     &.offset-#{$i} {
-      margin-left: percentage($i / 12);
+      margin-left: percentage($i / $grid-columns);
     }
     $i: $i - 1;
   }
