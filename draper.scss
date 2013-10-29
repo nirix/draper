@@ -1,7 +1,8 @@
 // normalize.css all the things!
 @import "draper/normalize";
 
-/*! draper.css v0.3 | BSD License | github.com/nirix/draper */
+/*! draper.css v0.4 | BSD License | github.com/nirix/draper */
+@import "draper/variables";
 @import "draper/mixins";
 @import "draper/base";
 @import "draper/alerts";
