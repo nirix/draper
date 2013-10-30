@@ -23,6 +23,36 @@ $grid-container-width: 1024px;
 $grid-columns: 12;
 $grid-column-padding: 15px;
 
+// Alerts
+// --------------------------------
+
+// All alerts
+$alert-padding: 8px 10px;
+$alert-text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+$alert-border: 1px solid;
+$alert-border-radius: 4px;
+
+// Warning
+$alert-warning-color: #c09853;
+$alert-warning-bg-color: #fcf8e3;
+$alert-warning-border-color: #fbeed5;
+
+// Success
+$alert-success-color: #468847;
+$alert-success-bg-color: #dff0d8;
+$alert-success-border-color: #d6e9c6;
+
+// Error
+$alert-error-color: #b94a48;
+$alert-error-bg-color: #f2dede;
+$alert-error-border-color: #eed3d7;
+
+// Info
+$alert-info-color: #3a87ad;
+$alert-info-bg-color: #d9edf7;
+$alert-info-border-color: #bce8f1;
+
+
 // Buttons
 // --------------------------------
 

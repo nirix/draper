@@ -3,13 +3,13 @@
 // --------------------------------
 
 .alert {
-  color: #c09853;
-  padding: 8px 10px;
+  color: $alert-warning-color;
+  padding: $alert-padding;
   margin-bottom: 10px;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-  background-color: #fcf8e3;
-  border: 1px solid #fbeed5;
-  border-radius: 4px;
+  text-shadow: $alert-text-shadow;
+  background-color: $alert-warning-bg-color;
+  border: $alert-border $alert-warning-border-color;
+  border-radius: $alert-border-radius;
 
   h4 {
     margin: 0;
@@ -17,20 +17,20 @@
   }
 
   &.success {
-    background-color: #dff0d8;
-    border-color: #d6e9c6;
-    color: #468847;
+    color: $alert-success-color;
+    background-color: $alert-success-bg-color;
+    border-color: $alert-success-border-color;
   }
 
   &.error {
-    background-color: #f2dede;
-    border-color: #eed3d7;
-    color: #b94a48;
+    color: $alert-error-color;
+    background-color: $alert-error-bg-color;
+    border-color: $alert-error-border-color;
   }
 
   &.info {
-    background-color: #d9edf7;
-    border-color: #bce8f1;
-    color: #3a87ad;
+    color: $alert-info-color;
+    background-color: $alert-info-bg-color;
+    border-color: $alert-info-border-color;
   }
 }
