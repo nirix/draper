@@ -1,8 +1,7 @@
 .panel {
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  padding: 10px;
-  margin-bottom: 10px;
+  border: $panel-border;
+  border-radius: $panel-border-radius;
+  margin: $panel-margin;
 
   ul, ol {
     &:last-child {
@@ -11,57 +10,61 @@
   }
 
   .panel-header {
-    background: #f5f5f5;
-    border-bottom: 1px solid #ddd;
-    border-radius: 4px 4px 0 0;
-    padding: 10px;
-    margin: -10px -10px 10px -10px;
-    font-weight: bold;
+    background-color: $panel-header-bg-color;
+    border-bottom: $panel-border;
+    border-radius: $panel-border-radius $panel-border-radius 0 0;
+    padding: $panel-header-padding;
+    font-weight: $panel-header-font-weight;
+  }
+
+  .panel-content {
+    padding: $panel-content-padding;
   }
 
   &.large {
     .panel-header {
-      font-size: 1.1em;
+      font-size: $panel-large-header-font-size;
+      padding: $panel-large-header-padding;
     }
   }
 
   &.success {
-    border-color: #d6e9c6;
+    border-color: $panel-success-border-color;
 
     .panel-header {
-      background-color: #dff0d8;
-      border-color: #d6e9c6;
-      color: #468847;
+      background-color: $panel-success-header-bg-color;
+      border-color: $panel-success-border-color;
+      color: $panel-success-header-color;
     }
   }
 
   &.error {
-    border-color: #eed3d7;
+    border-color: $panel-error-border-color;
 
     .panel-header {
-      background-color: #f2dede;
-      border-color: #eed3d7;
-      color: #b94a48;
+      background-color: $panel-error-header-bg-color;
+      border-color: $panel-error-border-color;
+      color: $panel-error-header-color;
     }
   }
 
   &.warning {
-    border-color: #fbeed5;
+    border-color: $panel-warning-border-color;
 
     .panel-header {
-      background-color: #fcf8e3;
-      border-color: #fbeed5;
-      color: #c09853;
+      background-color: $panel-warning-header-bg-color;
+      border-color: $panel-warning-border-color;
+      color: $panel-warning-header-color;
     }
   }
 
   &.info {
-    border-color: #bce8f1;
+    border-color: $panel-info-border-color;
 
     .panel-header {
-      background-color: #d9edf7;
-      border-color: #bce8f1;
-      color: #3a87ad;
+      background-color: $panel-info-header-bg-color;
+      border-color: $panel-info-border-color;
+      color: $panel-info-header-color;
     }
   }
 }
