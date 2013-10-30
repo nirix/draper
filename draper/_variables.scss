@@ -18,7 +18,6 @@ $box-border-radius: 4px;
 
 // Grid
 // --------------------------------
-
 $grid-container-width: 1024px;
 $grid-columns: 12;
 $grid-column-padding: 15px;
@@ -118,11 +117,9 @@ $btn-default-hover-bg-color: darken($btn-default-bg-color, 4%);
 $btn-success-bg-color: rgb(56, 179, 90);
 $btn-success-hover-bg-color: darken(rgb(56, 179, 90), 4%);
 
-
 // Warning button
 $btn-warning-bg-color: rgb(250, 167, 50);
 $btn-warning-hover-bg-color: darken(rgb(250, 167, 50), 6%);
-
 
 // Danger button
 $btn-danger-bg-color: rgb(179, 56, 56);
