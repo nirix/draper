@@ -22,3 +22,9 @@
      -moz-box-sizing: $sizing;
           box-sizing: $sizing;
 }
+
+@mixin alert-style($colour, $bg-colour, $border-colour) {
+  background-color: $bg-colour;
+  border-color: $border-colour;
+  color: $colour;
+}
