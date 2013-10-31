@@ -12,6 +12,14 @@ $border-radius: 2px;
 $line-height: 1.32;
 $line-height-computed: floor($font-size * $line-height);
 
+// Colours
+// -------------------------
+$colour-primary: #428bca;
+$colour-success: #5cb85c;
+$colour-warning: #f0ad4e;
+$colour-danger: #d9534f;
+$colour-info: #5bc0de;
+
 // Links
 $link-colour: #06c;
 $link-hover-colour: #09f;
@@ -40,3 +48,35 @@ $alert-danger-border-colour: darken($alert-danger-bg-colour, 8%);
 $alert-info-colour: #3a87ad;
 $alert-info-bg-colour: #d9edf7;
 $alert-info-border-colour: darken($alert-info-bg-colour, 8%);
+
+// Buttons
+// -------------------------
+// .btn-default
+$btn-default-colour: #333;
+$btn-default-bg-colour: #fff;
+$btn-default-border-colour: #ccc;
+
+// .btn-primary
+$btn-primary-colour: #fff;
+$btn-primary-bg-colour: $colour-primary;
+$btn-primary-border-colour: darken($btn-primary-bg-colour, 5%);
+
+// .btn-success
+$btn-success-colour: #fff;
+$btn-success-bg-colour: $colour-success;
+$btn-success-border-colour: darken($btn-success-bg-colour, 5%);
+
+// .btn-warning
+$btn-warning-colour: #fff;
+$btn-warning-bg-colour: $colour-warning;
+$btn-warning-border-colour: darken($btn-warning-bg-colour, 5%);
+
+// .btn-danger
+$btn-danger-colour: #fff;
+$btn-danger-bg-colour: $colour-danger;
+$btn-danger-border-colour: darken($btn-danger-bg-colour, 5%);
+
+// .btn-info
+$btn-info-colour: #fff;
+$btn-info-bg-colour: $colour-info;
+$btn-info-border-colour: darken($btn-info-bg-colour, 5%);

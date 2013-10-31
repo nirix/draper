@@ -1,83 +1,70 @@
 
 // Button CSS
 // --------------------------------
-
-.btn,
-.btn:link,
-.btn:visited,
-.btn:active,
-button,
-input[type="button"],
-input[type="submit"],
-input[type="reset"]
-{
-  vertical-align: middle;
+.btn {
+  display: inline-block;
+  padding: 4px $padding-horizontal;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: $font-size;
+  line-height: $line-height;
   text-align: center;
-  border-radius: $btn-border-radius;
-  padding: $btn-normal-padding;
-  font-size: $btn-normal-font-size;
-  font-weight: $btn-font-weight;
-  cursor: $btn-cursor;
-  color: $btn-color;
-  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: $border-radius;
+  white-space: nowrap;
 
-  // Default / Blue
-  border: 0;
-  background-color: $btn-default-bg-color;
-
-  &:hover {
-    background-color: $btn-default-hover-bg-color;
+  &:hover,
+  &:focus {
+    text-decoration: none;
   }
 
   &:active {
-    box-shadow: $btn-shadow;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
   }
 
-  // Success
-  &.success {
-    background-color: $btn-success-bg-color;
-
-    &:hover {
-      background-color: $btn-success-hover-bg-color;
-    }
+  // Colours
+  // ---------------
+  &.btn-default {
+    @include btn-style($btn-default-colour, $btn-default-bg-colour, $btn-default-border-colour);
   }
 
-  // Warning
-  &.warning {
-    background-color: $btn-warning-bg-color;
-
-    &:hover {
-      background-color: $btn-warning-hover-bg-color;
-    }
+  &.btn-primary {
+    @include btn-style($btn-primary-colour, $btn-primary-bg-colour, $btn-primary-border-colour);
   }
 
-  // Danger
-  &.danger {
-    background-color: $btn-danger-bg-color;
+  &.btn-success {
+    @include btn-style($btn-success-colour, $btn-success-bg-colour, $btn-success-border-colour);
+  }
 
-    &:hover {
-      background-color: $btn-danger-hover-bg-color;
-    }
+  &.btn-warning {
+    @include btn-style($btn-warning-colour, $btn-warning-bg-colour, $btn-warning-border-colour);
+  }
+
+  &.btn-danger {
+    @include btn-style($btn-danger-colour, $btn-danger-bg-colour, $btn-danger-border-colour);
+  }
+
+  &.btn-info {
+    @include btn-style($btn-info-colour, $btn-info-bg-colour, $btn-info-border-colour);
   }
 
   // Sizes
-  // --------------------------------
-
-  &.large {
-    font-size: $btn-large-font-size;
-    padding: $btn-large-padding;
-  }
-
-  &.small {
-    font-size: $btn-small-font-size;
-    padding: $btn-small-padding;
-  }
-
-  // Block
-  // --------------------------------
-  &.block {
+  // ---------------
+  &.btn-block {
     display: block;
     width: 100%;
-    box-sizing: border-box;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &.btn-lg {
+    font-size: ($font-size * 1.3);
+  }
+
+  &.btn-sm {
+    font-size: ceil($font-size - 2);
+    padding: 2px 4px;
   }
 }
