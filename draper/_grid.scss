@@ -1,17 +1,18 @@
 
 // Grid
 // --------------------------------
-
 .container {
   width: $grid-container-width;
   margin: 0 auto;
+
   @include clearfix();
 }
 
 .row {
+  margin-left:  ($grid-gutter / -2);
+  margin-right: ($grid-gutter / -2);
+
   @include clearfix();
-  margin-left:  (30px / -2);
-  margin-right: (30px / -2);
 }
 
 .col {
@@ -19,9 +20,10 @@
   float: left;
   width: 100%;
   min-height: 1px;
-  box-sizing: border-box;
-  padding-left: $grid-column-padding;
-  padding-right: $grid-column-padding;
+  padding-left: ($grid-gutter / 2);
+  padding-right: ($grid-gutter / 2);
+
+  @include box-sizing(border-box);
 
   $i: $grid-columns;
   @while $i > 0 {

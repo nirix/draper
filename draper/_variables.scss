@@ -80,3 +80,9 @@ $btn-danger-border-colour: darken($btn-danger-bg-colour, 5%);
 $btn-info-colour: #fff;
 $btn-info-bg-colour: $colour-info;
 $btn-info-border-colour: darken($btn-info-bg-colour, 5%);
+
+// Grid
+// -------------------------
+$grid-container-width: 1024px;
+$grid-columns: 12;
+$grid-gutter: 30px;
