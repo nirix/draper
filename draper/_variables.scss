@@ -86,3 +86,29 @@ $btn-info-border-colour: darken($btn-info-bg-colour, 5%);
 $grid-container-width: 1024px;
 $grid-columns: 12;
 $grid-gutter: 30px;
+
+// Panels
+// -------------------------
+$panel-margin: 0 0 10px 0;
+$panel-header-padding: $padding-vertical $padding-horizontal;
+$panel-header-font-weight: bold;
+
+// Default
+$panel-default-header-bg-colour: #f5f5f5;
+$panel-default-border-colour: $btn-default-border-colour;
+
+// .panel-success
+$panel-success-header-bg-colour: $alert-success-bg-colour;
+$panel-success-border-colour: $alert-success-border-colour;
+
+// .panel-warning
+$panel-warning-header-bg-colour: $alert-warning-bg-colour;
+$panel-warning-border-colour: $alert-warning-border-colour;
+
+// .panel-danger
+$panel-danger-header-bg-colour: $alert-danger-bg-colour;
+$panel-danger-border-colour: $alert-danger-border-colour;
+
+// .panel-info
+$panel-info-header-bg-colour: $alert-info-bg-colour;
+$panel-info-border-colour: $alert-info-border-colour;

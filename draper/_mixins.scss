@@ -42,3 +42,12 @@
     border-colour: darken($border-colour, 12%)
   }
 }
+
+@mixin panel-style($header-bg-colour, $border-colour) {
+  border-color: $border-colour;
+
+  .panel-header {
+    background-color: $header-bg-colour;
+    border-color: $border-colour;
+  }
+}

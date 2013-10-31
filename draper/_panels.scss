@@ -1,7 +1,9 @@
+
+// Panels
+// --------------------------------
 .panel {
-  border: $panel-border;
-  border-radius: $panel-border-radius;
-  margin: $panel-margin;
+  border: 1px solid $panel-default-border-colour;
+  border-radius: $border-radius;
 
   ul, ol {
     &:last-child {
@@ -10,61 +12,40 @@
   }
 
   .panel-header {
-    background-color: $panel-header-bg-color;
-    border-bottom: $panel-border;
-    border-radius: $panel-border-radius $panel-border-radius 0 0;
+    background-color: $panel-default-header-bg-colour;
+    border-bottom: 1px solid $panel-default-border-colour;
+    border-radius: $border-radius $border-radius 0 0;
     padding: $panel-header-padding;
     font-weight: $panel-header-font-weight;
   }
 
   .panel-content {
-    padding: $panel-content-padding;
+    padding: 10px;
   }
 
-  &.large {
-    .panel-header {
-      font-size: $panel-large-header-font-size;
-      padding: $panel-large-header-padding;
-    }
+  // Colours
+  // ---------------
+  &.panel-success {
+    @include panel-style($panel-success-header-bg-colour, $panel-success-border-colour);
   }
 
-  &.success {
-    border-color: $panel-success-border-color;
-
-    .panel-header {
-      background-color: $panel-success-header-bg-color;
-      border-color: $panel-success-border-color;
-      color: $panel-success-header-color;
-    }
+  &.panel-warning {
+    @include panel-style($panel-warning-header-bg-colour, $panel-warning-border-colour);
   }
 
-  &.error {
-    border-color: $panel-error-border-color;
-
-    .panel-header {
-      background-color: $panel-error-header-bg-color;
-      border-color: $panel-error-border-color;
-      color: $panel-error-header-color;
-    }
+  &.panel-danger {
+    @include panel-style($panel-danger-header-bg-colour, $panel-danger-border-colour);
   }
 
-  &.warning {
-    border-color: $panel-warning-border-color;
-
-    .panel-header {
-      background-color: $panel-warning-header-bg-color;
-      border-color: $panel-warning-border-color;
-      color: $panel-warning-header-color;
-    }
+  &.panel-info {
+    @include panel-style($panel-info-header-bg-colour, $panel-info-border-colour);
   }
 
-  &.info {
-    border-color: $panel-info-border-color;
-
+  // Sizes
+  // ---------------
+  &.panel-lg {
     .panel-header {
-      background-color: $panel-info-header-bg-color;
-      border-color: $panel-info-border-color;
-      color: $panel-info-header-color;
+      font-size: ($font-size * 1.3);
     }
   }
 }
