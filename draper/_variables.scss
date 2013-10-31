@@ -87,6 +87,16 @@ $grid-container-width: 1024px;
 $grid-columns: 12;
 $grid-gutter: 30px;
 
+// Form inputs
+// -------------------------
+$input-height: ($line-height-computed + (4px * 2.5));
+$input-bg-colour: #fafafa;
+$input-border: 1px solid #bbb;
+$input-border-radius: $border-radius;
+
+$input-focus-border-colour: #3478AA;
+$input-focus-bg-colour: #fff;
+
 // Panels
 // -------------------------
 $panel-margin: 0 0 10px 0;

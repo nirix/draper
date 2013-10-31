@@ -1,147 +1,119 @@
 
 // Forms CSS
 // --------------------------------
+// Labels
+// -------------------------
+label {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
 
-input[type="text"],
-input[type="password"],
-input[type="email"],
-input[type="url"],
-input[type="date"],
-textarea {
-  border: 1px solid #bbb;
-  border-radius: 2px;
-  background-color: #fafafa;
-  color: #000;
-  outline: 0;
-  padding: 4px 4px;
-  font-size: 0.95em;
-  width: 200px;
+// Form fields
+// -------------------------
+.form-control {
+  display: block;
+  width: 100%;
+  height: $input-height;
+  padding: 4px $padding-horizontal;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $font-colour;
+  vertical-align: middle;
+  background-color: $input-bg-colour;
+  border: $input-border;
+  border-radius: $input-border-radius;
 
   &:focus {
-    border-color: #3478AA;
-    background-color: #fff;
-  }
-
-  &.input-short {
-    width: 160px;
-  }
-
-  &.invalid, &:invalid {
-    border-color: red;
+    border-color: $input-focus-border-colour;
+    background-color: $input-focus-bg-colour;
   }
 }
 
-input[type="checkbox"],
-input[type="radio"] {
-  font-size: 1em;
+textarea.form-control {
+  height: auto;
 }
 
-form {
-  .help-inline {
+// Form layouts
+// -------------------------
+
+// Horizontal / tabular
+.form-horizontal, form.tabular {
+  // Labels
+  .control-label {
+    text-align: right;
+    padding-top: 4px;
+  }
+
+  // Groups
+  .form-group {
+    margin-left: ($grid-gutter / -2);
+    margin-right: ($grid-gutter / -2);
+    margin-bottom: 10px;
+
+    &:before, &:after {
+      display: table;
+      content: " ";
+
+      @include box-sizing(border-box);
+    }
+
+    &:after {
+      clear: both;
+    }
+
+    // Push selects down a little
+    select {
+      margin-top: 4px;
+    }
+  }
+}
+
+// Inline
+.form-inline, form.inline {
+  .form-group {
+    margin: 0;
+    vertical-align: middle;
+  }
+
+  .form-group, .form-control {
     display: inline-block;
-    padding-left: 5px;
   }
 
-  // Tabular
-  // --------------------------------
-  &.tabular {
-    .form-group {
-      margin-bottom: 15px;
-
-      &:before,
-      &:after {
-        display: table;
-        content: "";
-        line-height: 0;
-      }
-
-      &:after {
-        clear: both;
-      }
-    }
-    .control-label {
-      float: left;
-      width: 160px;
-      padding-top: 0.3em;
-      text-align: right;
-    }
-    .controls {
-      margin-left: 180px;
-
-      input[type="checkbox"],
-      input[type="radio"] {
-        margin-top: 0.4em;
-      }
-
-      select {
-        margin-top: 2px;
-      }
-    }
+  // Fix checkbox and radio positions
+  .radio,
+  .checkbox {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
   }
-
-  // Inline
-  // --------------------------------
-  &.inline {
-    vertical-align: middle;
-
-    input,
-    select,
-    textarea,
-    .radio,
-    .checkbox {
-      display: inline-block;
-    }
-    .radio,
-    .checkbox {
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-  }
-
-  // Actions
-  // --------------------------------
-  .actions {
-    text-align: center;
+  .radio input[type="radio"],
+  .checkbox input[type="checkbox"] {
+    float: none;
+    margin-left: 0;
   }
 }
 
+// Input groups
+// -------------------------
 .input-group {
+  position: relative;
   display: table;
+  border-collapse: separate;
 
-  input,
-  select {
-    display: table-cell;
-    vertical-align: middle;
-    margin-bottom: 0;
-  }
-
-  * {
-    border-radius: 0;
-
-    &:first-child {
-      border-radius: 4px 0 0 4px;
-    }
-
-    &:last-child {
-      border-radius: 0 4px 4px 0;
-    }
-  }
-
-  input, select, button {
-    &:not(:first-child):not(:last-child) {
-      border-radius: 0;
-    }
-  }
-
+  // Addon style and positioning
   .input-group-addon {
-    display: table-cell;
-    border: 1px solid #ccc;
-    background-color: #eee;
+    padding: 4px $padding-horizontal;
+    font-size: $font-size;
+    font-weight: normal;
+    line-height: 1;
     text-align: center;
-    vertical-align: middle;
-    padding: 3px 8px;
-    font-size: 0.8em;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 2px;
 
+    // Remove borders
     &:first-child {
       border-right: 0;
     }
@@ -150,12 +122,59 @@ form {
       border-left: 0;
     }
   }
-}
 
-input, textarea, select, button {
-  vertical-align: middle;
+  // Form control width
+  .form-control {
+    width: 100%;
+    margin-bottom: 0;
+  }
 
-  &.col {
-    float: none;
+  // Set elements as a table cell
+  .input-group-addon,
+  .input-group-btn,
+  .form-control {
+    display: table-cell;
+
+    &:not(:first-child):not(:last-child) {
+      border-radius: 0;
+    }
+  }
+
+  // Addon and button positioning
+  .input-group-addon,
+  .input-group-btn {
+    width: 1%;
+    white-space: nowrap;
+    vertical-align: middle;
+  }
+
+  .input-group-btn {
+    position: relative;
+    white-space: nowrap;
+  }
+
+  // Remove the border radius from anything between
+  // the first and last elements.
+  *:not(:first-child, :last-child) {
+    border-radius: 0;
+  }
+
+  // Remove the right border radius from the first element.
+  .form-control:first-child,
+  .input-group-addon:first-child,
+  .input-group-btn:first-child > .btn,
+  .input-group-btn:last-child > .btn:not(:last-child) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  // Remove the left border radius from the last element.
+  .form-control:last-child,
+  .input-group-addon:last-child,
+  .input-group-btn:last-child > .btn,
+  .input-group-btn:first-child > .btn:not(:first-child) {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
   }
 }
+
