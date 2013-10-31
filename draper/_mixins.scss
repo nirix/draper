@@ -28,3 +28,17 @@
   border-color: $border-colour;
   color: $colour;
 }
+
+@mixin btn-style($colour, $bg-colour, $border-colour) {
+  color: $colour;
+  background-color: $bg-colour;
+  border-color: $border-colour;
+
+  &:hover,
+  &:active,
+  &.active {
+    color: $colour;
+    background-color: darken($bg-colour, 8%);
+    border-colour: darken($border-colour, 12%)
+  }
+}
