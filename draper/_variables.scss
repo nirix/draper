@@ -90,7 +90,7 @@ $grid-gutter: 30px;
 // Form inputs
 // -------------------------
 $input-height: ($line-height-computed + (4px * 2.5));
-$input-bg-colour: #fafafa;
+$input-bg-colour: rgba(250, 250, 250, 0.45); // #fafafa
 $input-border: 1px solid #bbb;
 $input-border-radius: $border-radius;
 
