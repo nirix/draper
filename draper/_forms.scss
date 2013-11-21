@@ -80,6 +80,14 @@ textarea.form-control {
     display: inline-block;
   }
 
+  .form-group, .checkbox {
+    margin-right: 8px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
   // Fix checkbox and radio positions
   .radio,
   .checkbox {
