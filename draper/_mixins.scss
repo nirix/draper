@@ -35,11 +35,14 @@
   border-color: $border-colour;
 
   &:hover,
-  &:active,
   &.active {
     color: $colour;
     background-color: darken($bg-colour, 8%);
-    border-colour: darken($border-colour, 12%)
+    border-color: darken($border-colour, 12%);
+  }
+
+  &:active {
+    background-color: darken($bg-colour, 12%);
   }
 }
 
