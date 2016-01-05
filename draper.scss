@@ -1,19 +1,19 @@
 // normalize.css all the things!
-@import "draper/normalize";
+@import "scss/normalize";
 
-/*! draper.css v0.7 | BSD License | github.com/nirix/draper */
-@import "draper/variables";
-@import "draper/mixins";
-@import "draper/base";
-@import "draper/alerts";
-@import "draper/box";
-@import "draper/buttons";
-@import "draper/close";
-@import "draper/code";
-@import "draper/grid";
-@import "draper/forms";
-@import "draper/panels";
-@import "draper/tables";
-@import "draper/tabs";
-@import "draper/modal";
-@import "draper/transitions";
+/*! draper.css v0.8.0 | BSD 3-clause License | https://github.com/nirix/draper */
+@import "scss/variables";
+@import "scss/mixins";
+@import "scss/base";
+@import "scss/alerts";
+@import "scss/box";
+@import "scss/buttons";
+@import "scss/close";
+@import "scss/code";
+@import "scss/grid";
+@import "scss/forms";
+@import "scss/panels";
+@import "scss/tables";
+@import "scss/tabs";
+@import "scss/modal";
+@import "scss/transitions";
