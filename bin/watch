@@ -1,1 +1,1 @@
-sass --watch draper.scss:draper.css
+sass --watch scss/draper.scss:draper.css

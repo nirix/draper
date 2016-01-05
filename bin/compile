@@ -1,1 +1,1 @@
-sass draper.scss:draper.css --style compressed
+sass scss/draper.scss:draper.css --style compressed
