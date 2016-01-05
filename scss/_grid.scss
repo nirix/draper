@@ -1,33 +1,35 @@
 
-// Grid
 // --------------------------------
+// Grid
+
 .container {
   width: $grid-container-width;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left:  ($grid-gutter-width / 2);
+  padding-right: ($grid-gutter-width / 2);
 
   @include clearfix();
 }
 
 .row {
-  margin-left:  ($grid-gutter / -2);
-  margin-right: ($grid-gutter / -2);
+  margin-left:  ($grid-gutter-width / 2);
+  margin-right: ($grid-gutter-width / 2);
 
   @include clearfix();
 }
 
 .col {
-  position: relative;
-  float: left;
-  width: 100%;
-  min-height: 1px;
-  padding-left: ($grid-gutter / 2);
-  padding-right: ($grid-gutter / 2);
-
-  @include box-sizing(border-box);
-
   $i: $grid-columns;
   @while $i > 0 {
-    &.span-#{$i} {
+    &-span-#{$i} {
+      position: relative;
+      float: left;
+      min-height: 1px;
+      padding-left:  ($grid-gutter-width / 2);
+      padding-right: ($grid-gutter-width / 2);
+
+      @include clearfix();
       width: percentage($i / $grid-columns);
     }
     $i: $i - 1;
@@ -35,9 +37,50 @@
 
   $i: $grid-columns;
   @while $i > 0 {
-    &.offset-#{$i} {
+    &-offset-#{$i} {
       margin-left: percentage($i / $grid-columns);
     }
     $i: $i - 1;
   }
 }
+
+// .container {
+//   width: $grid-container-width;
+//   margin: 0 auto;
+
+//   @include clearfix();
+// }
+
+// .row {
+//   margin-left:  ($grid-gutter-width / -2);
+//   margin-right: ($grid-gutter-width / -2);
+
+//   @include clearfix();
+// }
+
+// .col {
+//   position: relative;
+//   float: left;
+//   width: 100%;
+//   min-height: 1px;
+//   padding-left: ($grid-gutter-width / 2);
+//   padding-right: ($grid-gutter-width / 2);
+
+//   box-sizing: border-box;
+
+//   $i: $grid-columns;
+//   @while $i > 0 {
+//     &-span-#{$i} {
+//       width: percentage($i / $grid-columns);
+//     }
+//     $i: $i - 1;
+//   }
+
+//   $i: $grid-columns;
+//   @while $i > 0 {
+//     &-offset-#{$i} {
+//       margin-left: percentage($i / $grid-columns);
+//     }
+//     $i: $i - 1;
+//   }
+// }

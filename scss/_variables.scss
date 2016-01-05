@@ -84,8 +84,9 @@ $btn-info-border-colour: darken($btn-info-bg-colour, 5%);
 // Grid
 // -------------------------
 $grid-container-width: 1024px;
+$grid-container-width: 65rem !default; // 1024px
 $grid-columns: 12;
-$grid-gutter: 30px;
+$grid-gutter-width: 1.875rem !default; // 30px;
 
 // Form inputs
 // -------------------------
