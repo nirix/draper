@@ -66,6 +66,13 @@ textarea.form-control {
     select {
       margin-top: 4px;
     }
+
+    .help-block {
+      @extend .text-muted;
+
+      display: block;
+      margin-top: 5px;
+    }
   }
 }
 
