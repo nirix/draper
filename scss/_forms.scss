@@ -38,7 +38,7 @@ textarea.form-control {
 // -------------------------
 
 // Horizontal / tabular
-.form-horizontal, form.tabular {
+.form-horizontal, .form-tabular {
   // Labels
   .control-label {
     text-align: right;
@@ -47,8 +47,8 @@ textarea.form-control {
 
   // Groups
   .form-group {
-    margin-left: ($grid-gutter / -2);
-    margin-right: ($grid-gutter / -2);
+    margin-left: ($grid-gutter-width / -2);
+    margin-right: ($grid-gutter-width / -2);
     margin-bottom: 10px;
 
     &:before, &:after {
