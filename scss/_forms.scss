@@ -73,6 +73,20 @@ textarea.form-control {
       display: block;
       margin-top: 5px;
     }
+
+    &.has-error {
+      label {
+        color: $state-danger-colour;
+      }
+
+      .form-control {
+        border-color: $state-danger-colour;
+      }
+
+      .help-block {
+        color: $state-danger-colour;
+      }
+    }
   }
 }
 
