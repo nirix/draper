@@ -14,12 +14,14 @@ body {
 a:link,
 a:visited {
   color: $link-colour;
+  text-decoration: $link-decoration;
 
   @include transition(color $transition-duration $transition-function)
 
   &:hover,
   &:active {
     color: $link-hover-colour;
+    text-decoration: $link-hover-decoration;
   }
 }
 
