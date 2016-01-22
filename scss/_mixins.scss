@@ -2,17 +2,12 @@
 // Mixins
 
 @import 'mixins/alerts';
+@import 'mixins/border-radius';
 @import 'mixins/buttons';
 @import 'mixins/cards';
 @import 'mixins/transitions';
 
 // Misc. mixins
-
-@mixin border-radius($radius) {
-  @if $enable-rounded {
-    border-radius: $radius;
-  }
-}
 
 @mixin clearfix() {
   &:before,

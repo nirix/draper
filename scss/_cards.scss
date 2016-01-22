@@ -13,7 +13,7 @@
     border-bottom: $card-border-width solid transparent;
     font-weight: $card-header-font-weight;
 
-    @include border-radius($card-border-radius-inner $card-border-radius-inner 0 0);
+    @include border-radius-top($card-border-radius-inner);
   }
 
   .card-footer {
@@ -21,7 +21,7 @@
     background: $card-cap-bg;
     border-top: $card-border-width solid $card-border;
 
-    @include border-radius(0 0 $card-border-radius-inner $card-border-radius-inner);
+    @include border-radius-bottom($card-border-radius-inner);
   }
 
   .card-text {
