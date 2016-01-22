@@ -1,209 +1,52 @@
 
-// Forms CSS
-// --------------------------------
-// Labels
-// -------------------------
-label {
-  display: inline-block;
-  margin-bottom: 5px;
-  font-weight: bold;
+// Forms
+
+form.tabular {
+  .form-group {
+    margin-bottom: $form-tabular-group-margin-bottom;
+  }
 }
 
-// Form fields
-// -------------------------
+.form-control-label {
+  padding: $input-padding-y $input-padding-x;
+  margin: 0;
+}
+
 .form-control {
   display: block;
   width: 100%;
-  height: $input-height;
-  padding: 4px $padding-horizontal;
-  font-size: $font-size;
-  line-height: $line-height;
-  color: $font-colour;
-  vertical-align: middle;
-  background-color: $input-bg-colour;
-  border: $input-border;
-  border-radius: $input-border-radius;
+  padding: $input-padding-y $input-padding-x;
+  font-size: $font-size-base;
+  line-height: $input-line-height;
+  color: $input-colour;
+  background-color: $input-bg;
+  background-image: none;
+  border: $input-border-width solid $input-border;
+
+  @include border-radius($input-border-radius);
+  @include transition(border-color $transition-duration $transition-function);
 
   &:focus {
-    border-color: $input-focus-border-colour;
-    background-color: $input-focus-bg-colour;
+    outline: none;
+    border-color: $input-focus-border;
   }
 }
 
-textarea.form-control {
-  height: auto;
-}
-
-// Form layouts
-// -------------------------
-
-// Horizontal / tabular
-.form-horizontal, .form-tabular {
-  // Labels
-  .control-label {
-    text-align: right;
-    padding-top: 4px;
-  }
-
-  // Groups
-  .form-group {
-    margin-left: ($grid-gutter-width / -2);
-    margin-right: ($grid-gutter-width / -2);
-    margin-bottom: 10px;
-
-    &:before, &:after {
-      display: table;
-      content: " ";
-
-      @include box-sizing(border-box);
-    }
-
-    &:after {
-      clear: both;
-    }
-
-    // Push selects down a little
-    select {
-      margin-top: 4px;
-    }
-
-    .help-block {
-      @extend .text-muted;
-
-      display: block;
-      margin-top: 5px;
-    }
-
-    &.has-error {
-      label {
-        color: $state-danger-colour;
-      }
-
-      .form-control {
-        border-color: $state-danger-colour;
-      }
-
-      .help-block {
-        color: $state-danger-colour;
-      }
-    }
-  }
-}
-
-// Inline
-.form-inline, form.inline {
-  .form-group {
-    margin: 0;
-    vertical-align: middle;
-  }
-
-  .form-group, .form-control {
-    display: inline-block;
-  }
-
-  .form-group, .checkbox {
-    margin-right: 8px;
-
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-
-  // Fix checkbox and radio positions
-  .radio,
-  .checkbox {
-    display: inline-block;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
-  }
-  .radio input[type="radio"],
-  .checkbox input[type="checkbox"] {
-    float: none;
-    margin-left: 0;
-  }
-}
-
-// Input groups
-// -------------------------
-.input-group {
+.radio,
+.checkbox {
   position: relative;
-  display: table;
-  border-collapse: separate;
+  display: block;
 
-  // Addon style and positioning
-  .input-group-addon {
-    padding: 4px $padding-horizontal;
-    font-size: $font-size;
-    font-weight: normal;
-    line-height: 1;
-    text-align: center;
-    background-color: #eee;
-    border: 1px solid #ccc;
-    border-radius: 2px;
-
-    // Remove borders
-    &:first-child {
-      border-right: 0;
-    }
-
-    &:last-child {
-      border-left: 0;
-    }
-  }
-
-  // Form control width
-  .form-control {
-    width: 100%;
+  label {
     margin-bottom: 0;
-  }
+    cursor: pointer;
 
-  // Set elements as a table cell
-  .input-group-addon,
-  .input-group-btn,
-  .form-control {
-    display: table-cell;
-
-    &:not(:first-child):not(:last-child) {
-      border-radius: 0;
+    input {
+      margin-right: 0.25rem;
     }
-  }
 
-  // Addon and button positioning
-  .input-group-addon,
-  .input-group-btn {
-    width: 1%;
-    white-space: nowrap;
-    vertical-align: middle;
-  }
-
-  .input-group-btn {
-    position: relative;
-    white-space: nowrap;
-  }
-
-  // Remove the border radius from anything between
-  // the first and last elements.
-  *:not(:first-child, :last-child) {
-    border-radius: 0;
-  }
-
-  // Remove the right border radius from the first element.
-  .form-control:first-child,
-  .input-group-addon:first-child,
-  .input-group-btn:first-child > .btn,
-  .input-group-btn:last-child > .btn:not(:last-child) {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-
-  // Remove the left border radius from the last element.
-  .form-control:last-child,
-  .input-group-addon:last-child,
-  .input-group-btn:last-child > .btn,
-  .input-group-btn:first-child > .btn:not(:first-child) {
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
+    input:only-child {
+      position: static;
+    }
   }
 }
-

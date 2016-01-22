@@ -91,8 +91,8 @@ $alert-danger-border: $colour-danger !default;
 // -----------------------------------------------------------------------------
 // Buttons
 
-$btn-padding-y: .2rem !default;
 $btn-padding-x: .8rem !default;
+$btn-padding-y: .2rem !default;
 $btn-border-radius: $border-radius-base !default;
 $btn-line-height: $line-height !default;
 
@@ -172,6 +172,23 @@ $card-danger-bg: $colour-danger !default;
 $card-danger-border: $colour-danger !default;
 $card-danger-cap-colour: $colour-danger !default;
 $card-danger-cap-bg: lighten($colour-danger, 32%) !default;
+
+// -----------------------------------------------------------------------------
+// Forms
+
+$input-padding-x: .8rem !default;
+$input-padding-y: .2rem !default;
+$input-line-height: $line-height !default;
+$input-colour: #000;
+$input-colour-placeholder: $colour-secondary;
+$input-bg: #fff;
+$input-border: $colour-secondary;
+$input-border-width: $border-width-base;
+$input-border-radius: $border-radius-base;
+
+$input-focus-border: #6cafe8;
+
+$form-tabular-group-margin-bottom: 10px;
 
 // -----------------------------------------------------------------------------
 // Grid
