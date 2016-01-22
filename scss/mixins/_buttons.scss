@@ -6,10 +6,15 @@
   background-color: $bg-colour;
   border-color: $border-colour;
 
-  &:hover,
-  &.active {
+  &:hover {
     background-color: darken($bg-colour, 10%);
     border-color: darken($border-colour, 10%);
+  }
+
+  &:active,
+  &.active {
+    background-color: darken($bg-colour, 15%);
+    border-color: darken($border-colour, 15%);
   }
 
   &.outline {
@@ -20,6 +25,12 @@
       color: $colour;
       background-color: darken($bg-colour, 10%);
       border-color: darken($border-colour, 10%);
+    }
+
+    &:active,
+    &.active {
+      background-color: darken($bg-colour, 15%);
+      border-color: darken($border-colour, 15%);
     }
   }
 }
