@@ -13,3 +13,16 @@
 .pull-right {
   @include clearfix();
 }
+
+.text-left {
+  text-align: left;
+}
+
+.text-centre,
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
