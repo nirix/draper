@@ -1,16 +1,15 @@
 
 // Utilities
-// --------------------------------
 
 .pull-left {
-    float: left;
+  float: left;
 }
 
 .pull-right {
-    float: right;
+  float: right;
 }
 
 .pull-left,
 .pull-right {
-    @include clearfix();
+  @include clearfix();
 }
