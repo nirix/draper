@@ -179,16 +179,16 @@ $card-danger-cap-bg: lighten($colour-danger, 32%) !default;
 $input-padding-x: .8rem !default;
 $input-padding-y: .2rem !default;
 $input-line-height: $line-height !default;
-$input-colour: #000;
-$input-colour-placeholder: $colour-secondary;
-$input-bg: #fff;
-$input-border: $colour-secondary;
-$input-border-width: $border-width-base;
-$input-border-radius: $border-radius-base;
+$input-colour: #000 !default;
+$input-colour-placeholder: $colour-secondary !default;
+$input-bg: #fff !default;
+$input-border: $colour-secondary !default;
+$input-border-width: $border-width-base !default;
+$input-border-radius: $border-radius-base !default;
 
-$input-focus-border: #6cafe8;
+$input-focus-border: #6cafe8 !default;
 
-$form-tabular-group-margin-bottom: 10px;
+$form-tabular-group-margin-bottom: 10px !default;
 
 // -----------------------------------------------------------------------------
 // Grid
@@ -207,17 +207,17 @@ $grid-breakpoints: (
 // -----------------------------------------------------------------------------
 // Tabs
 
-$tab-padding: .1rem .6rem;
-$tab-colour: #8c8c8c;
-$tab-border: #ccc;
-$tab-border-width: $border-width-base;
-$tab-border-radius: $border-radius-base;
+$tab-padding: .1rem .6rem !default;
+$tab-colour: #8c8c8c !default;
+$tab-border: #ccc !default;
+$tab-border-width: $border-width-base !default;
+$tab-border-radius: $border-radius-base !default;
 
-$tab-hover-colour: $tab-colour;
-$tab-hover-bg: #f6f6f6;
-$tab-hover-border: $tab-border;
+$tab-hover-colour: $tab-colour !default;
+$tab-hover-bg: #f6f6f6 !default;
+$tab-hover-border: $tab-border !default;
 
-$tab-active-colour: #000;
-$tab-active-bg: #fff;
-$tab-active-border: $tab-border;
-$tab-active-border-bottom: #fff;
+$tab-active-colour: #000 !default;
+$tab-active-bg: #fff !default;
+$tab-active-border: $tab-border !default;
+$tab-active-border-bottom: #fff !default;
