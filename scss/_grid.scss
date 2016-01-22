@@ -2,9 +2,16 @@
 // Grid
 
 .container {
-  width: $container-width;
   margin: 0 auto;
+
+  @each $breakpoint, $size in $container-max-widths {
+    @media (min-width: map-get($grid-breakpoints, $breakpoint)) {
+      max-width: $size;
+    }
+  }
 }
+
+// -----------------------------------------------------------------------------
 
 .row {
   display: flex;
@@ -42,5 +49,35 @@
     }
 
     $i: $i - 1;
+  }
+}
+
+// -----------------------------------------------------------------------------
+
+@each $breakpoint, $size in $grid-breakpoints {
+  @media (max-width: $size) {
+    $i: $grid-columns;
+
+    @while $i > 0 {
+      %grid-break-#{$breakpoint} {
+        flex: none;
+        width: 100%;
+        max-width: 100%;
+      }
+
+      .col-#{$breakpoint}-#{$i} {
+        @extend %grid-break-#{$breakpoint};
+      }
+
+      %grid-break-offset-#{$breakpoint} {
+        margin-left: 0;
+      }
+
+      .col-#{$breakpoint}-offset-#{$i} {
+        @extend %grid-break-offset-#{$breakpoint};
+      }
+
+      $i: $i - 1;
+    }
   }
 }

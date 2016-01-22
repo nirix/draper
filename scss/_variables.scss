@@ -5,11 +5,21 @@
 $enable-rounded: true !default;
 $enable-transitions: true !default;
 
+// Transitions
 $transition-duration: .3s !default;
 $transition-function: ease !default;
 
+// Borders
 $border-radius-base: .3rem !default;
 $border-width-base: .1rem !default;
+
+// Screen sizes
+$container-max-widths: (
+  sm: 576px,
+  md: 720px,
+  lg: 940px,
+  xl: 1140px
+) !default;
 
 // -----------------------------------------------------------------------------
 // Colours
@@ -164,14 +174,13 @@ $card-danger-cap-bg: lighten($colour-danger, 32%) !default;
 // -----------------------------------------------------------------------------
 // Grid
 
-$container-width: 75rem !default;
 $grid-columns: 12 !default;
 $grid-gutter-width: .8rem !default;
 
 $grid-breakpoints: (
   xs: 0,
-  sm: 34rem,
-  md: 48rem,
-  lg: 62rem
+  sm: 544px, // 34rem
+  md: 768px, // 48rem
+  lg: 992px, // 62rem
+  xl: 1200px // 72rem
 ) !default;
-
