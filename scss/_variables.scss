@@ -165,3 +165,13 @@ $card-danger-cap-bg: lighten($colour-danger, 32%) !default;
 // Grid
 
 $container-width: 75rem !default;
+$grid-columns: 12 !default;
+$grid-gutter-width: .8rem !default;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 34rem,
+  md: 48rem,
+  lg: 62rem
+) !default;
+

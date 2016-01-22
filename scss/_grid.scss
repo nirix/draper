@@ -5,3 +5,42 @@
   width: $container-width;
   margin: 0 auto;
 }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -($grid-gutter-width / 2);
+  margin-right: -($grid-gutter-width / 2);
+}
+
+%grid-column {
+  position: relative;
+  min-height: 1px;
+  padding-left: ($grid-gutter-width / 2);
+  padding-right: ($grid-gutter-width / 2);
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  $i: $grid-columns;
+  @while $i > 0 {
+    %grid-span-#{$i} {
+      flex: 0 0 percentage($i / $grid-columns);
+      max-width: percentage($i / $grid-columns);
+    }
+
+    .col-#{$breakpoint}-#{$i} {
+      @extend %grid-column;
+      @extend %grid-span-#{$i};
+    }
+
+    %grid-offset-#{$i} {
+      margin-left: percentage($i / $grid-columns);
+    }
+
+    .col-#{$breakpoint}-offset-#{$i} {
+      @extend %grid-offset-#{$i};
+    }
+
+    $i: $i - 1;
+  }
+}
