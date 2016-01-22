@@ -1,0 +1,26 @@
+{
+  "name": "draper",
+  "version": "0.1.0",
+  "description": "A CSS framework for modern browsers.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nirix/draper.git"
+  },
+  "keywords": [
+    "modern",
+    "css",
+    "framework"
+  ],
+  "author": "Nirix",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nirix/draper/issues"
+  },
+  "homepage": "https://github.com/nirix/draper#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.1.1",
+    "gulp-watch": "^4.3.5",
+    "normalize.css": "^3.0.3"
+  }
+}

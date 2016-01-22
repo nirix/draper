@@ -1,0 +1,25 @@
+
+// Button mixins
+
+@mixin btn-variant($colour, $bg-colour, $border-colour) {
+  color: $colour;
+  background-color: $bg-colour;
+  border-color: $border-colour;
+
+  &:hover,
+  &.active {
+    background-color: darken($bg-colour, 10%);
+    border-color: darken($border-colour, 10%);
+  }
+
+  &.outline {
+    color: $border-colour;
+    background: transparent;
+
+    &:hover {
+      color: $colour;
+      background-color: darken($bg-colour, 10%);
+      border-color: darken($border-colour, 10%);
+    }
+  }
+}

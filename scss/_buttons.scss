@@ -1,70 +1,41 @@
 
-// Button CSS
-// --------------------------------
+// Buttons
+
 .btn {
-  display: inline-block;
-  padding: 4px $padding-horizontal;
-  margin-bottom: 0;
-  font-weight: bold;
-  font-size: $font-size;
-  line-height: $line-height;
-  text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
+  padding: $btn-padding-y $btn-padding-x;
   border: 1px solid transparent;
-  border-radius: $border-radius;
-  white-space: nowrap;
+  line-height: $btn-line-height;
 
-  &:hover,
-  &:focus {
-    text-decoration: none;
+  @include border-radius($btn-border-radius);
+  @include transition(color $transition-duration $transition-function,
+                      background-color $transition-duration $transition-function,
+                      border-color $transition-duration $transition-function);
+
+  &.primary {
+    @include btn-variant($btn-primary-colour, $btn-primary-bg, $btn-primary-border);
   }
 
-  &:active {
-    // box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+  &.secondary {
+    @include btn-variant($btn-secondary-colour, $btn-secondary-bg, $btn-secondary-border);
   }
 
-  // Colours
-  // ---------------
-  &.btn-default {
-    @include btn-style($btn-default-colour, $btn-default-bg-colour, $btn-default-border-colour);
+  &.dark {
+    @include btn-variant($btn-dark-colour, $btn-dark-bg, $btn-dark-border);
   }
 
-  &.btn-primary {
-    @include btn-style($btn-primary-colour, $btn-primary-bg-colour, $btn-primary-border-colour);
+  &.info {
+    @include btn-variant($btn-info-colour, $btn-info-bg, $btn-info-border);
   }
 
-  &.btn-success {
-    @include btn-style($btn-success-colour, $btn-success-bg-colour, $btn-success-border-colour);
+  &.success {
+    @include btn-variant($btn-success-colour, $btn-success-bg, $btn-success-border);
   }
 
-  &.btn-warning {
-    @include btn-style($btn-warning-colour, $btn-warning-bg-colour, $btn-warning-border-colour);
+  &.warning {
+    @include btn-variant($btn-warning-colour, $btn-warning-bg, $btn-warning-border);
   }
 
-  &.btn-danger {
-    @include btn-style($btn-danger-colour, $btn-danger-bg-colour, $btn-danger-border-colour);
-  }
-
-  &.btn-info {
-    @include btn-style($btn-info-colour, $btn-info-bg-colour, $btn-info-border-colour);
-  }
-
-  // Sizes
-  // ---------------
-  &.btn-block {
-    display: block;
-    width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  &.btn-lg {
-    font-size: ($font-size * 1.3);
-  }
-
-  &.btn-sm {
-    font-size: ceil($font-size - 2);
-    padding: 2px 4px;
+  &.danger {
+    @include btn-variant($btn-danger-colour, $btn-danger-bg, $btn-danger-border);
   }
 }

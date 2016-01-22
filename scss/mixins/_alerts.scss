@@ -1,0 +1,15 @@
+
+// Alert mixins
+
+@mixin alert-variant($colour, $bg-colour, $border-colour) {
+  color: $colour;
+  background-color: $bg-colour;
+  border-color: $border-colour;
+
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    color: $colour;
+  }
+}

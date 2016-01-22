@@ -1,43 +1,30 @@
 
-// Alerts CSS
-// --------------------------------
+// Alerts
+
 .alert {
-  padding: 5px 10px;
-  margin-bottom: 10px;
-  border: $alert-border;
-  border-radius: $alert-border-radius;
+  padding: $alert-padding;
+  border: $alert-border-width solid transparent;
+  margin-bottom: $alert-margin-bottom;
 
-  h4 {
-    margin-top: 0;
-    colour: inherit;
+  @include border-radius($alert-border-radius);
+
+  a {
+    font-weight: $alert-link-font-weight;
   }
 
-  > p,
-  > ul {
-    margin-bottom: 0;
+  &.info {
+    @include alert-variant($alert-info-colour, $alert-info-bg, $alert-info-border);
   }
 
-  > p + p {
-    margin-top: 5px;
+  &.success {
+    @include alert-variant($alert-success-colour, $alert-success-bg, $alert-success-border);
   }
 
-  &.alert-success {
-    @include alert-style($alert-success-colour, $alert-success-bg-colour, $alert-success-border-colour);
+  &.warning {
+    @include alert-variant($alert-warning-colour, $alert-warning-bg, $alert-warning-border);
   }
 
-  &.alert-warning {
-    @include alert-style($alert-warning-colour, $alert-warning-bg-colour, $alert-warning-border-colour);
-  }
-
-  &.alert-danger {
-    @include alert-style($alert-danger-colour, $alert-danger-bg-colour, $alert-danger-border-colour);
-  }
-
-  &.alert-info {
-    @include alert-style($alert-info-colour, $alert-info-bg-colour, $alert-info-border-colour);
-  }
-
-  .close {
-    margin-top: 1px;
+  &.danger {
+    @include alert-variant($alert-danger-colour, $alert-danger-bg, $alert-danger-border);
   }
 }

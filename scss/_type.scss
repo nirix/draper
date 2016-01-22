@@ -1,20 +1,61 @@
 
-// Headings
-// --------------------------------
+// Typography
 
-.page-header {
-    font-size: 1.7em;
-    margin-top: 0;
-    border-bottom: 1px solid #C2C2C2;
+html {
+  font-size: $font-size-root;
 }
 
-// Text
-// --------------------------------
-
-.text-muted {
-  color: #777;
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height: $line-height;
 }
 
-.text-center {
-  text-align: center;
+a:link,
+a:visited {
+  color: $link-colour;
+
+  @include transition(color $transition-duration $transition-function)
+
+  &:hover,
+  &:active {
+    color: $link-hover-colour;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+  color: $headings-line-height;
+  margin-bottom: $headings-margin-bottom;
+}
+
+h1 {
+  font-size: $headings-h1-font-size;
+}
+
+h2 {
+  font-size: $headings-h2-font-size;
+}
+
+h3 {
+  font-size: $headings-h3-font-size;
+}
+
+h4 {
+  font-size: $headings-h4-font-size;
+}
+
+h5 {
+  font-size: $headings-h5-font-size;
+}
+
+h6 {
+  font-size: $headings-h6-font-size;
 }

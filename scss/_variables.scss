@@ -1,128 +1,118 @@
 
-// Base
-// -------------------------
-$font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-size: 14px;
-$font-colour: #000;
-$bg-colour: #fff;
-$padding-vertical: 5px;
-$padding-horizontal: 8px;
-$border-radius: 2px;
+// -----------------------------------------------------------------------------
+// Options
 
-$line-height: 1.32;
-$line-height-computed: floor($font-size * $line-height);
+$enable-rounded: true !default;
+$enable-transitions: true !default;
 
+$transition-duration: .3s !default;
+$transition-function: ease !default;
+
+$border-radius-base: .18rem !default;
+$border-width-base: .1rem !default;
+
+// -----------------------------------------------------------------------------
 // Colours
-// -------------------------
-$colour-primary: #428bca;
-$colour-success: #5cb85c;
-$colour-warning: #f0ad4e;
-$colour-danger: #d9534f;
-$colour-info: #5bc0de;
+
+$colour-primary: #0275d8 !default;
+$colour-secondary: #dad6d5 !default;
+$colour-dark: #5d5d5d !default;
+$colour-info: #5bc0de !default;
+$colour-success: #5cb85c !default;
+$colour-warning: #f0ad4e !default;
+$colour-danger: #d9534f !default;
 
 // Links
-$link-colour: #06c;
-$link-hover-colour: #09f;
+$link-colour: #06c !default;
+$link-hover-colour: #09f !default;
 
-// States
-$state-danger-colour: #a94442;
+// -----------------------------------------------------------------------------
+// Typography
 
+$font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-monospace: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+
+$font-size-root: 16px !default;
+$font-size-base: 1rem !default;
+
+$line-height: 1.5 !default;
+
+// Headings
+$headings-font-family: inherit !default;
+$headings-font-weight: bold !default;
+$headings-line-height: 1.1 !default;
+$headings-color: inherit !default;
+$headings-margin-bottom: 1rem !default;
+
+$headings-h1-font-size: 2.5rem !default;
+$headings-h2-font-size: 2rem !default;
+$headings-h3-font-size: 1.75rem !default;
+$headings-h4-font-size: 1.5rem !default;
+$headings-h5-font-size: 1.25rem !default;
+$headings-h6-font-size: 1rem !default;
+
+// -----------------------------------------------------------------------------
 // Alerts
-// -------------------------
-$alert-border: 1px solid transparent;
-$alert-border-radius: 4px;
 
-// Success
-$alert-success-colour: #468847;
-$alert-success-bg-colour: #dff0d8;
-$alert-success-border-colour: darken($alert-success-bg-colour, 8%);
+$alert-padding: .5rem .8rem !default;
+$alert-margin-bottom: 1rem !default;
+$alert-border-radius: $border-radius-base !default;
+$alert-link-font-weight: bold !default;
+$alert-border-width: $border-width-base !default;
 
-// Warning
-$alert-warning-colour: #c09853;
-$alert-warning-bg-colour: #fcf8e3;
-$alert-warning-border-colour: darken($alert-warning-bg-colour, 8%);
+$alert-info-colour: darken($colour-info, 22%) !default;
+$alert-info-bg: lighten($colour-info, 30%) !default;
+$alert-info-border: $colour-info !default;
 
-// Danger
-$alert-danger-colour: #b94a48;
-$alert-danger-bg-colour: #f2dede;
-$alert-danger-border-colour: darken($alert-danger-bg-colour, 8%);
+$alert-success-colour: darken($colour-success, 20%) !default;
+$alert-success-bg: lighten($colour-success, 40%) !default;
+$alert-success-border: $colour-success !default;
 
-// Info
-$alert-info-colour: #3a87ad;
-$alert-info-bg-colour: #d9edf7;
-$alert-info-border-colour: darken($alert-info-bg-colour, 8%);
+$alert-warning-colour: darken($colour-warning, 20%) !default;
+$alert-warning-bg: lighten($colour-warning, 32%) !default;
+$alert-warning-border: $colour-warning !default;
 
+$alert-danger-colour: darken($colour-danger, 20%) !default;
+$alert-danger-bg: lighten($colour-danger, 32%) !default;
+$alert-danger-border: $colour-danger !default;
+
+// -----------------------------------------------------------------------------
 // Buttons
-// -------------------------
-// .btn-default
-$btn-default-colour: #333;
-$btn-default-bg-colour: #fff;
-$btn-default-border-colour: #ccc;
 
-// .btn-primary
-$btn-primary-colour: #fff;
-$btn-primary-bg-colour: $colour-primary;
-$btn-primary-border-colour: darken($btn-primary-bg-colour, 5%);
+$btn-padding-y: .2rem !default;
+$btn-padding-x: .8rem !default;
+$btn-border-radius: $border-radius-base !default;
+$btn-line-height: $line-height !default;
 
-// .btn-success
-$btn-success-colour: #fff;
-$btn-success-bg-colour: $colour-success;
-$btn-success-border-colour: darken($btn-success-bg-colour, 5%);
+$btn-primary-colour: #fff !default;
+$btn-primary-bg: $colour-primary !default;
+$btn-primary-border: $colour-primary !default;
 
-// .btn-warning
-$btn-warning-colour: #fff;
-$btn-warning-bg-colour: $colour-warning;
-$btn-warning-border-colour: darken($btn-warning-bg-colour, 5%);
+$btn-secondary-colour: #000 !default;
+$btn-secondary-bg: #fff !default;
+$btn-secondary-border: $colour-secondary !default;
 
-// .btn-danger
-$btn-danger-colour: #fff;
-$btn-danger-bg-colour: $colour-danger;
-$btn-danger-border-colour: darken($btn-danger-bg-colour, 5%);
+$btn-dark-colour: #fff !default;
+$btn-dark-bg: $colour-dark !default;
+$btn-dark-border: $colour-dark !default;
 
-// .btn-info
-$btn-info-colour: #fff;
-$btn-info-bg-colour: $colour-info;
-$btn-info-border-colour: darken($btn-info-bg-colour, 5%);
+$btn-info-colour: #fff !default;
+$btn-info-bg: $colour-info !default;
+$btn-info-border: $colour-info !default;
 
+$btn-success-colour: #fff !default;
+$btn-success-bg: $colour-success !default;
+$btn-success-border: $colour-success !default;
+
+$btn-warning-colour: #fff !default;
+$btn-warning-bg: $colour-warning !default;
+$btn-warning-border: $colour-warning !default;
+
+$btn-danger-colour: #fff !default;
+$btn-danger-bg: $colour-danger !default;
+$btn-danger-border: $colour-danger !default;
+
+// -----------------------------------------------------------------------------
 // Grid
-// -------------------------
-$grid-container-width: 1024px;
-$grid-container-width: 65rem !default; // 1024px
-$grid-columns: 12;
-$grid-gutter-width: 1.875rem !default; // 30px;
 
-// Form inputs
-// -------------------------
-$input-height: ($line-height-computed + (4px * 2.5));
-$input-bg-colour: rgba(250, 250, 250, 0.45); // #fafafa
-$input-border: 1px solid #bbb;
-$input-border-radius: $border-radius;
-
-$input-focus-border-colour: #3478AA;
-$input-focus-bg-colour: #fff;
-
-// Panels
-// -------------------------
-$panel-margin: 0 0 10px 0;
-$panel-header-padding: $padding-vertical $padding-horizontal;
-$panel-header-font-weight: bold;
-
-// Default
-$panel-default-header-bg-colour: #f5f5f5;
-$panel-default-border-colour: $btn-default-border-colour;
-
-// .panel-success
-$panel-success-header-bg-colour: $alert-success-bg-colour;
-$panel-success-border-colour: $alert-success-border-colour;
-
-// .panel-warning
-$panel-warning-header-bg-colour: $alert-warning-bg-colour;
-$panel-warning-border-colour: $alert-warning-border-colour;
-
-// .panel-danger
-$panel-danger-header-bg-colour: $alert-danger-bg-colour;
-$panel-danger-border-colour: $alert-danger-border-colour;
-
-// .panel-info
-$panel-info-header-bg-colour: $alert-info-bg-colour;
-$panel-info-border-colour: $alert-info-border-colour;
+$container-width: 75rem !default;
