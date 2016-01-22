@@ -11,7 +11,7 @@ $transition-function: ease !default;
 
 // Borders
 $border-radius-base: .3rem !default;
-$border-width-base: .1rem !default;
+$border-width-base: 1px !default;
 
 // Screen sizes
 $container-max-widths: (
@@ -186,3 +186,21 @@ $grid-breakpoints: (
   lg: 992px,
   xl: 1200px
 ) !default;
+
+// -----------------------------------------------------------------------------
+// Tabs
+
+$tab-padding: .1rem .6rem;
+$tab-colour: #8c8c8c;
+$tab-border: #ccc;
+$tab-border-width: $border-width-base;
+$tab-border-radius: $border-radius-base;
+
+$tab-hover-colour: $tab-colour;
+$tab-hover-bg: #f6f6f6;
+$tab-hover-border: $tab-border;
+
+$tab-active-colour: #000;
+$tab-active-bg: #fff;
+$tab-active-border: $tab-border;
+$tab-active-border-bottom: #fff;

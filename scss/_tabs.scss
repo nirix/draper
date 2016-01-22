@@ -1,57 +1,46 @@
 
-// Tabs CSS
-// --------------------------------
+// Tabs
 
 .tabs {
-  height: 25px;
-  font-size: ceil($font-size - 2);
-  position: relative;
-  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-bottom: $tab-border-width solid $tab-border;
 
-  ul {
-    margin: 0;
-    position: absolute;
-    padding-left: 10px;
-    width: 2000px;
-    border-bottom: 1px solid #bbb;
-    list-style: none;
+  li {
+    display: inline-block;
 
-    li {
-      float: left;
-      white-space: nowrap;
-      margin-right: 4px;
-      position: relative;
-      margin-bottom: -1px;
+    &.tab-item {
+      margin-bottom: -$tab-border-width;
+    }
 
-      a:link, a:visited {
+    &.tab-item {
+      a:link,
+      a:visited {
         display: block;
-        text-decoration: none;
-        border: 1px solid transparent;
-        padding: 4px 10px;
-        border-radius: 2px 2px 0 0;
-        color: #8c8c8c;
-        font-weight: bold;
+        padding: $tab-padding;
+        color: $tab-colour;
+        border: $tab-border-width solid transparent;
 
-        &:hover {
-          background-color: #f6f6f6;
+        @include border-radius-top($tab-border-radius);
+
+        &:hover,
+        &:active {
+          color: $tab-hover-colour;
+          background-color: $tab-hover-bg;
+          border-color: $tab-hover-border;
+          border-bottom-color: $tab-hover-border;
         }
       }
 
-      &.active a, a:hover {
-        border: 1px solid #ccc;
-      }
-
-      &.active a {
-        background-color: #fff;
-      }
-
-      &.active a {
-        color: #000;
-        border-bottom-color: #fff;
-
-        &:hover {
-          background: transparent;
-        }
+      &.active a:link,
+      &.active a:visited,
+      &.active a:hover,
+      &.active a:active {
+        color: $tab-active-colour;
+        background-color: $tab-active-bg;
+        border-color: $tab-active-border;
+        border-bottom-color: $tab-active-border-bottom;
       }
     }
   }
