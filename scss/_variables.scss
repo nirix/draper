@@ -113,6 +113,55 @@ $btn-danger-bg: $colour-danger !default;
 $btn-danger-border: $colour-danger !default;
 
 // -----------------------------------------------------------------------------
+// Cards
+
+$card-margin-bottom: 1rem !default;
+$card-colour: #000 !default;
+$card-bg: #fff !default;
+$card-border: $colour-secondary !default;
+$card-border-width: $border-width-base !default;
+$card-border-radius: $border-radius-base !default;
+$card-border-radius-inner: $border-radius-base - .1 !default;
+
+$card-header-font-weight: normal !default;
+$card-cap-padding: .5rem .8rem !default;
+$card-cap-colour: #000 !default;
+$card-cap-bg: darken(#fff, 5%) !default;
+
+$card-block-padding: 1rem !default;
+$card-text-padding: .5rem .8rem !default;
+
+$card-primary-colour: #fff !default;
+$card-primary-bg: $colour-primary !default;
+$card-primary-border: $colour-primary !default;
+$card-primary-cap-colour: $colour-primary !default;
+$card-primary-cap-bg: lighten($colour-primary, 40%) !default;
+
+$card-info-colour: #fff !default;
+$card-info-bg: $colour-info !default;
+$card-info-border: $colour-info !default;
+$card-info-cap-colour: $colour-info !default;
+$card-info-cap-bg: lighten($colour-info, 32%) !default;
+
+$card-success-colour: #fff !default;
+$card-success-bg: $colour-success !default;
+$card-success-border: $colour-success !default;
+$card-success-cap-colour: $colour-success !default;
+$card-success-cap-bg: lighten($colour-success, 40%) !default;
+
+$card-warning-colour: #fff !default;
+$card-warning-bg: $colour-warning !default;
+$card-warning-border: $colour-warning !default;
+$card-warning-cap-colour: $colour-warning !default;
+$card-warning-cap-bg: lighten($colour-warning, 32%) !default;
+
+$card-danger-colour: #fff !default;
+$card-danger-bg: $colour-danger !default;
+$card-danger-border: $colour-danger !default;
+$card-danger-cap-colour: $colour-danger !default;
+$card-danger-cap-bg: lighten($colour-danger, 32%) !default;
+
+// -----------------------------------------------------------------------------
 // Grid
 
 $container-width: 75rem !default;

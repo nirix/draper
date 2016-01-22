@@ -1,0 +1,76 @@
+
+// Cards / Panels
+
+.card {
+  position: relative;
+  border: $card-border-width solid transparent;
+  margin-bottom: $card-margin-bottom;
+
+  @include border-radius($card-border-radius);
+
+  .card-header {
+    padding: $card-cap-padding;
+    border-bottom: $card-border-width solid transparent;
+    font-weight: $card-header-font-weight;
+
+    @include border-radius($card-border-radius-inner $card-border-radius-inner 0 0);
+  }
+
+  .card-footer {
+    padding: $card-cap-padding;
+    background: $card-cap-bg;
+    border-top: $card-border-width solid $card-border;
+
+    @include border-radius(0 0 $card-border-radius-inner $card-border-radius-inner);
+  }
+
+  .card-text {
+    padding: $card-text-padding;
+  }
+
+  .card-block {
+    padding: $card-block-padding;
+  }
+
+  @include card-outline-variant($card-colour, $card-bg, $card-border, $card-cap-colour, $card-cap-bg);
+
+  &.primary {
+    @include card-variant($card-primary-colour, $card-primary-bg, $card-primary-border);
+
+    &.outline {
+      @include card-outline-variant($card-colour, $card-bg, $card-primary-border, $card-primary-cap-colour, $card-primary-cap-bg);
+    }
+  }
+
+  &.info {
+    @include card-variant($card-info-colour, $card-info-bg, $card-info-border);
+
+    &.outline {
+      @include card-outline-variant($card-colour, $card-bg, $card-info-border, $card-info-cap-colour, $card-info-cap-bg);
+    }
+  }
+
+  &.success {
+    @include card-variant($card-success-colour, $card-success-bg, $card-success-border);
+
+    &.outline {
+      @include card-outline-variant($card-colour, $card-bg, $card-success-border, $card-success-cap-colour, $card-success-cap-bg);
+    }
+  }
+
+  &.warning {
+    @include card-variant($card-warning-colour, $card-warning-bg, $card-warning-border);
+
+    &.outline {
+      @include card-outline-variant($card-colour, $card-bg, $card-warning-border, $card-warning-cap-colour, $card-warning-cap-bg);
+    }
+  }
+
+  &.danger {
+    @include card-variant($card-danger-colour, $card-danger-bg, $card-danger-border);
+
+    &.outline {
+      @include card-outline-variant($card-colour, $card-bg, $card-danger-border, $card-danger-cap-colour, $card-danger-cap-bg);
+    }
+  }
+}

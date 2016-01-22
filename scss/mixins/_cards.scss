@@ -1,0 +1,20 @@
+
+// Cards / Panels mixins
+
+@mixin card-variant($colour, $bg-colour, $border-colour) {
+  color: $colour;
+  background-color: $bg-colour;
+  border-color: $border-colour;
+}
+
+@mixin card-outline-variant($colour, $bg-colour, $border-colour, $cap-colour, $cap-bg) {
+  color: $colour;
+  background-color: $bg-colour;
+  border-color: $border-colour;
+
+  .card-header {
+    color: $cap-colour;
+    background-color: $cap-bg;
+    border-color: $border-colour;
+  }
+}
