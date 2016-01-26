@@ -207,17 +207,17 @@ $grid-breakpoints: (
 // -----------------------------------------------------------------------------
 // Tables
 
-$table-padding: .3rem .5rem;
-$table-border: #ececec;
-$table-border-width: $border-width-base;
-$table-border-radius: $border-radius-base;
+$table-padding: .3rem .5rem !default;
+$table-border: #ececec !default;
+$table-border-width: $border-width-base !default;
+$table-border-radius: $border-radius-base !default;
 
-$table-thead-border-bottom-width: 2px;
+$table-thead-border-bottom-width: 2px !default;
 
-$table-tr-odd-background: #f9f9f9;
-$table-tr-even-background: transparent;
+$table-tr-odd-background: #f9f9f9 !default;
+$table-tr-even-background: transparent !default;
 
-$table-tr-hover-background: darken($table-tr-odd-background, 1.5%);
+$table-tr-hover-background: darken($table-tr-odd-background, 1.5%) !default;
 
 // -----------------------------------------------------------------------------
 // Tabs
