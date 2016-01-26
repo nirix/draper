@@ -152,25 +152,25 @@ $card-primary-cap-bg: lighten($colour-primary, 40%) !default;
 $card-info-colour: #fff !default;
 $card-info-bg: $colour-info !default;
 $card-info-border: $colour-info !default;
-$card-info-cap-colour: $colour-info !default;
+$card-info-cap-colour: darken($colour-info, 22%) !default;
 $card-info-cap-bg: lighten($colour-info, 32%) !default;
 
 $card-success-colour: #fff !default;
 $card-success-bg: $colour-success !default;
 $card-success-border: $colour-success !default;
-$card-success-cap-colour: $colour-success !default;
+$card-success-cap-colour: darken($colour-success, 20%) !default;
 $card-success-cap-bg: lighten($colour-success, 40%) !default;
 
 $card-warning-colour: #fff !default;
 $card-warning-bg: $colour-warning !default;
 $card-warning-border: $colour-warning !default;
-$card-warning-cap-colour: $colour-warning !default;
+$card-warning-cap-colour: darken($colour-warning, 20%) !default;
 $card-warning-cap-bg: lighten($colour-warning, 32%) !default;
 
 $card-danger-colour: #fff !default;
 $card-danger-bg: $colour-danger !default;
 $card-danger-border: $colour-danger !default;
-$card-danger-cap-colour: $colour-danger !default;
+$card-danger-cap-colour: darken($colour-danger, 20%) !default;
 $card-danger-cap-bg: lighten($colour-danger, 32%) !default;
 
 // -----------------------------------------------------------------------------
@@ -182,11 +182,11 @@ $input-line-height: $line-height !default;
 $input-colour: #000 !default;
 $input-colour-placeholder: $colour-secondary !default;
 $input-bg: #fff !default;
-$input-border: $colour-secondary !default;
+$input-border: #ccc !default;
 $input-border-width: $border-width-base !default;
 $input-border-radius: $border-radius-base !default;
 
-$input-focus-border: #6cafe8 !default;
+$input-focus-border: #0275d8 !default;
 
 $form-tabular-group-margin-bottom: 10px !default;
 
