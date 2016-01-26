@@ -8,7 +8,7 @@ var sassPaths = [
 
 gulp.task('watch', function () {
   watch('scss/**/*.scss', function () {
-    gulp.run('sass');
+    gulp.start('sass');
   });
 });
 
