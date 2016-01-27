@@ -21,6 +21,7 @@
         padding: $tab-padding;
         color: $tab-colour;
         border: $tab-border-width solid transparent;
+        font-weight: $tab-font-weight;
 
         @include border-radius-top($tab-border-radius);
 
