@@ -95,6 +95,8 @@ $btn-padding-x: .8rem !default;
 $btn-padding-y: .2rem !default;
 $btn-border-radius: $border-radius-base !default;
 $btn-line-height: $line-height !default;
+// $btn-text-shadow: .05rem .05rem .05rem rgba(0, 0, 0, 0.15) !default;
+$btn-text-shadow: none;
 
 $btn-primary-colour: #fff !default;
 $btn-primary-bg: $colour-primary !default;

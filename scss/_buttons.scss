@@ -6,6 +6,7 @@
   border: 1px solid transparent;
   line-height: $btn-line-height;
 
+  @include text-shadow($btn-text-shadow);
   @include border-radius($btn-border-radius);
   @include transition(color $transition-duration $transition-function,
                       background-color $transition-duration $transition-function,

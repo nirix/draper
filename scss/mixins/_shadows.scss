@@ -1,0 +1,8 @@
+
+// Shadows mixins
+
+@mixin text-shadow($shadow) {
+  @if $enable-shadows {
+    text-shadow: $shadow;
+  }
+}

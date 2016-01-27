@@ -20,6 +20,7 @@
   &.outline {
     color: $border-colour;
     background: transparent;
+    text-shadow: none;
 
     &:hover {
       color: $colour;
