@@ -6,6 +6,7 @@
   background-color: $bg-colour;
   border-color: $border-colour;
 
+  &:focus,
   &:hover {
     background-color: darken($bg-colour, 10%);
     border-color: darken($border-colour, 10%);
@@ -22,6 +23,7 @@
     background: transparent;
     text-shadow: none;
 
+    &:focus,
     &:hover {
       color: $colour;
       background-color: darken($bg-colour, 10%);
@@ -30,6 +32,7 @@
 
     &:active,
     &.active {
+      color: $colour;
       background-color: darken($bg-colour, 15%);
       border-color: darken($border-colour, 15%);
     }
