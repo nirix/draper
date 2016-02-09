@@ -82,11 +82,11 @@ $alert-success-bg: lighten($colour-success, 40%) !default;
 $alert-success-border: $colour-success !default;
 
 $alert-warning-colour: darken($colour-warning, 20%) !default;
-$alert-warning-bg: lighten($colour-warning, 32%) !default;
+$alert-warning-bg: lighten($colour-warning, 40%) !default;
 $alert-warning-border: $colour-warning !default;
 
 $alert-danger-colour: darken($colour-danger, 20%) !default;
-$alert-danger-bg: lighten($colour-danger, 32%) !default;
+$alert-danger-bg: lighten($colour-danger, 50%) !default;
 $alert-danger-border: $colour-danger !default;
 
 // -----------------------------------------------------------------------------
@@ -168,13 +168,13 @@ $card-warning-colour: #fff !default;
 $card-warning-bg: $colour-warning !default;
 $card-warning-border: $colour-warning !default;
 $card-warning-cap-colour: darken($colour-warning, 20%) !default;
-$card-warning-cap-bg: lighten($colour-warning, 32%) !default;
+$card-warning-cap-bg: lighten($colour-warning, 40%) !default;
 
 $card-danger-colour: #fff !default;
 $card-danger-bg: $colour-danger !default;
 $card-danger-border: $colour-danger !default;
 $card-danger-cap-colour: darken($colour-danger, 20%) !default;
-$card-danger-cap-bg: lighten($colour-danger, 32%) !default;
+$card-danger-cap-bg: lighten($colour-danger, 50%) !default;
 
 // -----------------------------------------------------------------------------
 // Forms
