@@ -20,7 +20,7 @@
   margin-right: -($grid-gutter-width / 2);
 }
 
-.col {
+%col {
   position: relative;
   min-height: 1px;
   padding-left: ($grid-gutter-width / 2);
@@ -30,6 +30,8 @@
 $i: $grid-columns;
 @while $i > 0 {
   %grid-span-#{$i} {
+    @extend %col;
+
     flex: 0 0 percentage($i / $grid-columns);
     max-width: percentage($i / $grid-columns);
   }
@@ -38,21 +40,15 @@ $i: $grid-columns;
     margin-left: percentage($i / $grid-columns);
   }
 
-  .col {
-    &.span-#{$i} {
-      @each $breakpoint, $size in $grid-breakpoints {
-        &-#{$breakpoint} {
-          @extend %grid-span-#{$i};
-        }
-      }
+  @each $breakpoint, $size in $grid-breakpoints {
+    .col-#{$breakpoint}-#{$i} {
+      @extend %grid-span-#{$i};
     }
+  }
 
-    &.offset-#{$i} {
-      @each $breakpoint, $size in $grid-breakpoints {
-        &-#{$breakpoint} {
-          @extend %grid-offset-#{$i};
-        }
-      }
+  @each $breakpoint, $size in $grid-breakpoints {
+    .offset-#{$breakpoint}-#{$i} {
+      @extend %grid-offset-#{$i};
     }
   }
 
@@ -76,11 +72,11 @@ $i: $grid-columns;
     $i: $grid-columns;
     @while $i > 0 {
       @each $breakpoint in map-keys($grid-breakpoints) {
-        .col.span-#{$i}-#{$breakpoint} {
+        .col-#{$breakpoint}-#{$i} {
           @extend %grid-break-#{$breakpoint};
         }
 
-        .col.offset-#{$i}-#{$breakpoint} {
+        .offset-#{$breakpoint}-#{$i} {
           @extend %grid-break-offset-#{$breakpoint};
         }
       }
