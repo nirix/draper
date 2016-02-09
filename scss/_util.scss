@@ -1,6 +1,56 @@
 
 // Utilities
 
+.text-primary {
+  color: $colour-primary;
+}
+
+.text-secondary {
+  color: $colour-secondary;
+}
+
+.text-info {
+  color: $colour-info;
+}
+
+.text-success {
+  color: $colour-success;
+}
+
+.text-warning {
+  color: $colour-warning;
+}
+
+.text-danger {
+  color: $colour-danger;
+}
+
+.bg-primary {
+  background-color: $colour-primary;
+}
+
+.bg-secondary {
+  background-color: $colour-secondary;
+}
+
+.bg-info {
+  background-color: $colour-info;
+}
+
+.bg-success {
+  background-color: $colour-success;
+}
+
+.bg-warning {
+  background-color: $colour-warning;
+}
+
+.bg-danger {
+  background-color: $colour-danger;
+}
+
+//
+
 .pull-left {
   float: left;
 }
