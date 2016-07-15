@@ -49,30 +49,65 @@
   background-color: $colour-danger;
 }
 
-//
+// -----------------------------------------------------------------------------
+// Screen size utilities
 
-.pull-left {
-  float: left;
+@mixin screen-min-xs() {
+  @media (min-width: map-get($grid-breakpoints, xs)) {
+    @content
+  }
 }
 
-.pull-right {
-  float: right;
+@mixin screen-min-sm() {
+  @media (min-width: map-get($grid-breakpoints, sm)) {
+    @content
+  }
 }
 
-.pull-left,
-.pull-right {
-  @include clearfix();
+@mixin screen-min-md() {
+  @media (min-width: map-get($grid-breakpoints, md)) {
+    @content
+  }
 }
 
-.text-left {
-  text-align: left;
+@mixin screen-min-lg() {
+  @media (min-width: map-get($grid-breakpoints, lg)) {
+    @content
+  }
 }
 
-.text-centre,
-.text-center {
-  text-align: center;
+@mixin screen-min-xl() {
+  @media (min-width: map-get($grid-breakpoints, xl)) {
+    @content
+  }
 }
 
-.text-right {
-  text-align: right;
+@mixin screen-max-xs() {
+  @media (max-width: map-get($grid-breakpoints, xs)) {
+    @content
+  }
+}
+
+@mixin screen-max-sm() {
+  @media (max-width: map-get($grid-breakpoints, sm)) {
+    @content
+  }
+}
+
+@mixin screen-max-md() {
+  @media (max-width: map-get($grid-breakpoints, md)) {
+    @content
+  }
+}
+
+@mixin screen-max-lg() {
+  @media (max-width: map-get($grid-breakpoints, lg)) {
+    @content
+  }
+}
+
+@mixin screen-max-xl() {
+  @media (max-width: map-get($grid-breakpoints, xl)) {
+    @content
+  }
 }
