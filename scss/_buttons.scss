@@ -5,6 +5,7 @@
   padding: $btn-padding-y $btn-padding-x;
   border: 1px solid transparent;
   line-height: $btn-line-height;
+  cursor: pointer;
 
   @include text-shadow($btn-text-shadow);
   @include border-radius($btn-border-radius);
@@ -13,30 +14,30 @@
                       border-color $transition-duration $transition-function);
 
   &.primary {
-    @include btn-variant($btn-primary-colour, $btn-primary-bg, $btn-primary-border);
+    @include btn-variant($btn-primary-colour, $btn-primary-bg, $btn-primary-border, $btn-primary-hover-colour, $btn-primary-hover-bg, $btn-primary-hover-border, $btn-primary-active-colour, $btn-primary-active-bg, $btn-primary-active-border);
   }
 
   &.secondary {
-    @include btn-variant($btn-secondary-colour, $btn-secondary-bg, $btn-secondary-border);
+    @include btn-variant($btn-secondary-colour, $btn-secondary-bg, $btn-secondary-border, $btn-secondary-hover-colour, $btn-secondary-hover-bg, $btn-secondary-hover-border, $btn-secondary-active-colour, $btn-secondary-active-bg, $btn-secondary-active-border);
   }
 
   &.dark {
-    @include btn-variant($btn-dark-colour, $btn-dark-bg, $btn-dark-border);
+    @include btn-variant($btn-dark-colour, $btn-dark-bg, $btn-dark-border, $btn-dark-hover-colour, $btn-dark-hover-bg, $btn-dark-hover-border, $btn-dark-active-colour, $btn-dark-active-bg, $btn-dark-active-border);
   }
 
   &.info {
-    @include btn-variant($btn-info-colour, $btn-info-bg, $btn-info-border);
+    @include btn-variant($btn-info-colour, $btn-info-bg, $btn-info-border, $btn-info-hover-colour, $btn-info-hover-bg, $btn-info-hover-border, $btn-info-active-colour, $btn-info-active-bg, $btn-info-active-border);
   }
 
   &.success {
-    @include btn-variant($btn-success-colour, $btn-success-bg, $btn-success-border);
+    @include btn-variant($btn-success-colour, $btn-success-bg, $btn-success-border, $btn-success-hover-colour, $btn-success-hover-bg, $btn-success-hover-border, $btn-success-active-colour, $btn-success-active-bg, $btn-success-active-border);
   }
 
   &.warning {
-    @include btn-variant($btn-warning-colour, $btn-warning-bg, $btn-warning-border);
+    @include btn-variant($btn-warning-colour, $btn-warning-bg, $btn-warning-border, $btn-warning-hover-colour, $btn-warning-hover-bg, $btn-warning-hover-border, $btn-warning-active-colour, $btn-warning-active-bg, $btn-warning-active-border);
   }
 
   &.danger {
-    @include btn-variant($btn-danger-colour, $btn-danger-bg, $btn-danger-border);
+    @include btn-variant($btn-danger-colour, $btn-danger-bg, $btn-danger-border, $btn-danger-hover-colour, $btn-danger-hover-bg, $btn-danger-hover-border, $btn-danger-active-colour, $btn-danger-active-bg, $btn-danger-active-border);
   }
 }

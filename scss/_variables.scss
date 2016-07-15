@@ -102,30 +102,72 @@ $btn-text-shadow: none;
 $btn-primary-colour: #fff !default;
 $btn-primary-bg: $colour-primary !default;
 $btn-primary-border: $colour-primary !default;
+$btn-primary-hover-colour: $btn-primary-colour !default;
+$btn-primary-hover-bg: darken($colour-primary, 10%) !default;
+$btn-primary-hover-border: darken($btn-primary-border, 10%) !default;
+$btn-primary-active-colour: $btn-primary-hover-colour !default;
+$btn-primary-active-bg: darken($btn-primary-hover-bg, 5%) !default;
+$btn-primary-active-border: darken($btn-primary-hover-border, 5%) !default;
 
 $btn-secondary-colour: #000 !default;
 $btn-secondary-bg: #fff !default;
 $btn-secondary-border: $colour-secondary !default;
+$btn-secondary-hover-colour: $btn-secondary-colour !default;
+$btn-secondary-hover-bg: $colour-secondary !default;
+$btn-secondary-hover-border: darken($btn-secondary-border, 5%) !default;
+$btn-secondary-active-colour: $btn-secondary-hover-colour !default;
+$btn-secondary-active-bg: darken($btn-secondary-hover-bg, 5%) !default;
+$btn-secondary-active-border: darken($btn-secondary-hover-border, 5%) !default;
 
 $btn-dark-colour: #fff !default;
 $btn-dark-bg: $colour-dark !default;
 $btn-dark-border: $colour-dark !default;
+$btn-dark-hover-colour: $btn-dark-colour !default;
+$btn-dark-hover-bg: darken($colour-dark, 10%) !default;
+$btn-dark-hover-border: darken($btn-dark-border, 10%) !default;
+$btn-dark-active-colour: $btn-dark-hover-colour !default;
+$btn-dark-active-bg: darken($btn-dark-hover-bg, 5%) !default;
+$btn-dark-active-border: darken($btn-dark-hover-border, 5%) !default;
 
 $btn-info-colour: #fff !default;
 $btn-info-bg: $colour-info !default;
 $btn-info-border: $colour-info !default;
+$btn-info-hover-colour: $btn-info-colour !default;
+$btn-info-hover-bg: darken($colour-info, 10%) !default;
+$btn-info-hover-border: darken($btn-info-border, 10%) !default;
+$btn-info-active-colour: $btn-info-hover-colour !default;
+$btn-info-active-bg: darken($btn-info-hover-bg, 5%) !default;
+$btn-info-active-border: darken($btn-info-hover-border, 5%) !default;
 
 $btn-success-colour: #fff !default;
 $btn-success-bg: $colour-success !default;
 $btn-success-border: $colour-success !default;
+$btn-success-hover-colour: $btn-success-colour !default;
+$btn-success-hover-bg: darken($colour-success, 10%) !default;
+$btn-success-hover-border: darken($btn-success-border, 10%) !default;
+$btn-success-active-colour: $btn-success-hover-colour !default;
+$btn-success-active-bg: darken($btn-success-hover-bg, 5%) !default;
+$btn-success-active-border: darken($btn-success-hover-border, 5%) !default;
 
 $btn-warning-colour: #fff !default;
 $btn-warning-bg: $colour-warning !default;
 $btn-warning-border: $colour-warning !default;
+$btn-warning-hover-colour: $btn-warning-colour !default;
+$btn-warning-hover-bg: darken($colour-warning, 5%) !default;
+$btn-warning-hover-border: darken($btn-warning-border, 5%) !default;
+$btn-warning-active-colour: $btn-warning-hover-colour !default;
+$btn-warning-active-bg: darken($btn-warning-hover-bg, 3%) !default;
+$btn-warning-active-border: darken($btn-warning-hover-border, 3%) !default;
 
 $btn-danger-colour: #fff !default;
 $btn-danger-bg: $colour-danger !default;
 $btn-danger-border: $colour-danger !default;
+$btn-danger-hover-colour: $btn-danger-colour !default;
+$btn-danger-hover-bg: darken($colour-danger, 10%) !default;
+$btn-danger-hover-border: darken($btn-danger-border, 10%) !default;
+$btn-danger-active-colour: $btn-danger-hover-colour !default;
+$btn-danger-active-bg: darken($btn-danger-hover-bg, 5%) !default;
+$btn-danger-active-border: darken($btn-danger-hover-border, 5%) !default;
 
 // -----------------------------------------------------------------------------
 // Cards

@@ -1,21 +1,23 @@
 
 // Button mixins
 
-@mixin btn-variant($colour, $bg-colour, $border-colour) {
+@mixin btn-variant($colour, $bg-colour, $border-colour,
+                   $hover-colour: $colour, $hover-bg-colour: darken($bg-colour, 10%), $hover-border-colour: darken($border-colour, 10%),
+                   $active-colour: $colour, $active-bg-colour: darken($bg-colour, 15%), $active-border-colour: darken($border-colour, 15%)) {
   color: $colour;
   background-color: $bg-colour;
   border-color: $border-colour;
 
   &:focus,
   &:hover {
-    background-color: darken($bg-colour, 10%);
-    border-color: darken($border-colour, 10%);
+    background-color: $hover-bg-colour;
+    border-color: $hover-border-colour;
   }
 
   &:active,
   &.active {
-    background-color: darken($bg-colour, 15%);
-    border-color: darken($border-colour, 15%);
+    background-color: $active-bg-colour;
+    border-color: $active-border-colour;
   }
 
   &.outline {
@@ -26,15 +28,15 @@
     &:focus,
     &:hover {
       color: $colour;
-      background-color: darken($bg-colour, 10%);
-      border-color: darken($border-colour, 10%);
+      background-color: $hover-bg-colour;
+      border-color: $hover-border-colour;
     }
 
     &:active,
     &.active {
       color: $colour;
-      background-color: darken($bg-colour, 15%);
-      border-color: darken($border-colour, 15%);
+      background-color: $active-bg-colour;
+      border-color: $active-border-colour;
     }
   }
 }
