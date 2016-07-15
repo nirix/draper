@@ -1,5 +1,4 @@
 var gulp  = require('gulp'),
-    watch = require('gulp-watch'),
     sass  = require('gulp-sass');
 
 var sassPaths = [
@@ -7,9 +6,7 @@ var sassPaths = [
 ];
 
 gulp.task('watch', function () {
-  watch('scss/**/*.scss', function () {
-    gulp.start('sass');
-  });
+  gulp.watch('scss/**/*.scss', ['sass']);
 });
 
 gulp.task('sass', function () {
