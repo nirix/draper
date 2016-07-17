@@ -1,31 +1,32 @@
 
+code,
+pre {
+  font-family: $font-family-monospace;
+}
+
 // Code element CSS
 // --------------------------------
 
 code {
-  background-color: #f8f8f8;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  font-size: 0.85em;
-  padding: 0 3px;
+  font-size: $code-font-size;
+  color: $code-colour;
+  background-color: $code-bg;
+  border: $code-border;
+  border-radius: $code-border-radius;
+  padding: $code-padding-y $code-padding-x;
 }
 
 // Pre element CSS
 // --------------------------------
 
 pre {
-  background-color: #f8f8f8;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  font-size: 1em;
-  line-height: 19px;
+  font-size: $pre-font-size;
+  color: $pre-colour;
+  background-color: $pre-bg;
+  border: $pre-border;
+  border-radius: $pre-border-radius;
   overflow: auto;
-  padding: 6px 10px;
-
-  code {
-    margin: 0;
-    padding: 0;
-    background: transparent;
-    border: 0;
-  }
+  padding: $pre-padding-y $pre-padding-x;
+  margin: 0;
+  margin-bottom: 1rem;
 }

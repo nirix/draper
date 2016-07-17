@@ -294,3 +294,22 @@ $modal-border-radius: $border-radius-base !default;
 
 $modal-title-font-size: 1.1rem !default;
 $modal-footer-bg: rgb(248, 248, 248) !default;
+
+// -----------------------------------------------------------------------------
+// Code / Pre
+
+$code-font-size: 90% !default;
+$code-colour: #000 !default;
+$code-bg: #f8f8f8 !default;
+$code-border: 1px solid #ccc !default;
+$code-border-radius: $border-radius-base !default;
+$code-padding-y: .2rem !default;
+$code-padding-x: .4rem !default;
+
+$pre-font-size: $font-size-base !default;
+$pre-colour: $code-colour !default;
+$pre-bg: $code-bg !default;
+$pre-border: $code-border !default;
+$pre-border-radius: $code-border-radius !default;
+$pre-padding-y: .5rem !default;
+$pre-padding-x: .8rem !default;
