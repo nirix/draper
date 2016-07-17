@@ -282,3 +282,15 @@ $tab-active-colour: #000 !default;
 $tab-active-bg: #fff !default;
 $tab-active-border: $tab-border !default;
 $tab-active-border-bottom: #fff !default;
+
+// -----------------------------------------------------------------------------
+// Modal
+
+$modal-bg: #fff !default;
+$modal-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2) !default;
+$modal-border-colour: rgb(180,180,180) !default;
+$modal-border: 1px solid $modal-border-colour !default;
+$modal-border-radius: $border-radius-base !default;
+
+$modal-title-font-size: 1.1rem !default;
+$modal-footer-bg: rgb(248, 248, 248) !default;
