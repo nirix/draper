@@ -1232,6 +1232,7 @@ select.form-control {
 .tabs {
   margin: 0;
   padding: 0;
+  padding-left: .5rem;
   list-style: none;
   border-bottom: 1px solid #ccc;
 }
@@ -1359,4 +1360,30 @@ select.form-control {
   text-align: right;
   padding: 1rem;
   border-radius: 0 0 0.2rem 0.2rem;
+}
+
+code,
+pre {
+  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+code {
+  font-size: 90%;
+  color: #000;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 0.2rem;
+  padding: 0.2rem 0.4rem;
+}
+
+pre {
+  font-size: 1rem;
+  color: #000;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 0.2rem;
+  overflow: auto;
+  padding: 0.5rem 0.8rem;
+  margin: 0;
+  margin-bottom: 1rem;
 }
