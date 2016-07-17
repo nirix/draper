@@ -30,6 +30,12 @@
   }
 }
 
+select.form-control {
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+}
+
 .radio,
 .checkbox {
   position: relative;
